@@ -4,16 +4,54 @@ import logo2 from '../assets/images/Mobile_logo.svg';
 import mobileimage from '../assets/images/mobileimg.svg';
 
 const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        setShowNavbar(false); // hide on scroll down
+      } else {
+        setShowNavbar(true); // show on scroll up
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   return (
-    <nav className={`navbar navbar-expand-md navbar-light py-2 sticky-navbar`}>
+    <>
+    <nav className={`navbar navbar-expand-md navbar-light py-2 sticky-navbar ${showNavbar ? 'show' : 'hide'} d-block d-lg-none`}>
+      <div className="container nav_cont">
+        <div className="navbar_warpper">
+
+          {/* Logo */}
+          <a className="navbar-brand" href="#home">
+            <img src={logo2} alt="Mierae Logo" className='mirae_logo mirae_logo_mobile' />
+          </a>
+
+
+
+          <img src={mobileimage} alt="Mobile Nav" className='mobile_nav_image' />
+        </div>
+      </div>
+    </nav>
+
+
+
+    <nav className={`navbar navbar-expand-md navbar-light py-2 sticky-navbar d-none d-lg-block`}>
       <div className="container nav_cont">
         <div className="navbar_warpper">
 
           {/* Logo */}
           <a className="navbar-brand" href="#home">
             <img src={logo} alt="Mierae Logo" className='mirae_logo mirae_logo_desktop' />
-            <img src={logo2} alt="Mierae Logo" className='mirae_logo mirae_logo_mobile' />
           </a>
 
           {/* Toggler */}
@@ -47,11 +85,10 @@ const Navbar = () => {
               <span className="bg-white fw-bold rounded small nav_text2">IT’S FREE</span>
             </a>
           </div>
-
-          <img src={mobileimage} alt="Mobile Nav" className='mobile_nav_image' />
         </div>
       </div>
     </nav>
+    </>
   );
 };
 
