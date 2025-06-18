@@ -26,8 +26,6 @@ function App() {
       <Blog />
       <Faq />
       <Footer /> */}
-
-      <Navbar />
       <Allsection />
     </>
   )

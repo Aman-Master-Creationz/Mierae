@@ -767,6 +767,25 @@
     margin-bottom: 1.5rem;
 }
 
+ .scroll-snap-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .scroll-snap-section {
+    scroll-snap-align: start;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .auto-height {
+    height: auto !important;
+  }
+
+
 nav.navbar.navbar-expand-md {
     position: relative;
 
