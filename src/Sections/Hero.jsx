@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import familyImage from "../assets/images/family.png";
 import user1 from "../assets/images/author.svg";
 import NameBadge from "../components/Namebadge";
+import { useState, useEffect } from "react";
+
 
 // Parent animation with stagger
 const containerVariants = {
@@ -35,6 +37,20 @@ const imageFadeIn = {
 };
 
 const HeroSection = () => {
+
+  const [showStickyButton, setShowStickyButton] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    // Show sticky button after scrolling 100px
+    setShowStickyButton(window.scrollY > 100);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+
   return (
     <section className="her0_section" id="home">
       <div className="container">
@@ -67,7 +83,7 @@ const HeroSection = () => {
                 className="d-flex gap-3 mt-3 mt-lg-4"
                 variants={fadeUp}
               >
-                <div className="button_wrap">
+                <div className={`button_wrap ${showStickyButton ? "sticky_show" : ""}`}>
                 <a href="#calculator1" className="btn navbar_button d-flex align-items-center">
                   <span className="me-2 nav_text1">Check Eligibility</span>
                   <span className="bg-white fw-bold rounded small nav_text2">IT’S FREE</span>

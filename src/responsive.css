@@ -842,6 +842,23 @@
         display: block;
     }
 
+    .button_wrap {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.button_wrap.sticky_show {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    width: 73%;
+}
+
+
+
     .item-center {
         justify-content: center;
     }
