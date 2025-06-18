@@ -36,19 +36,19 @@ const imageFadeIn = {
   },
 };
 
-const HeroSection = () => {
+const HeroSection = ({ showSticky }) => {
 
   const [showStickyButton, setShowStickyButton] = useState(false);
 
-useEffect(() => {
-  const handleScroll = () => {
-    // Show sticky button after scrolling 100px
-    setShowStickyButton(window.scrollY > 100);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show sticky button after scrolling 100px
+      setShowStickyButton(window.scrollY > 100);
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
 
   return (
@@ -83,11 +83,11 @@ useEffect(() => {
                 className="d-flex gap-3 mt-3 mt-lg-4"
                 variants={fadeUp}
               >
-                <div className={`button_wrap ${showStickyButton ? "sticky_show" : ""}`}>
-                <a href="#calculator1" className="btn navbar_button d-flex align-items-center">
-                  <span className="me-2 nav_text1">Check Eligibility</span>
-                  <span className="bg-white fw-bold rounded small nav_text2">IT’S FREE</span>
-                </a>
+                <div className={`button_wrap ${showSticky ? "sticky_show" : ""}`}>
+                  <a href="#calculator1" className="btn navbar_button d-flex align-items-center">
+                    <span className="me-2 nav_text1">Check Eligibility</span>
+                    <span className="bg-white fw-bold rounded small nav_text2">IT’S FREE</span>
+                  </a>
                 </div>
 
                 <button className="btn orange_button not_mobile">Check Eligibility</button>

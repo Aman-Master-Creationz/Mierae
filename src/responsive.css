@@ -781,6 +781,11 @@
     overflow: hidden;
   }
 
+  .scroll_footer{
+    overflow: visible !important;
+    height: auto !important;
+  }
+
   .auto-height {
     height: fit-content !important;
   }

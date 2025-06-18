@@ -1,3 +1,4 @@
+import { useRef, useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import HeroSection from "./Hero";
 import WhyMierae from "./Why Mierae";
@@ -11,38 +12,65 @@ import Footer from "../components/Footer";
 
 const Allsection = () => {
   const isMobile = window.innerWidth <= 767;
+  const scrollRef = useRef(null);
+  const [showStickyButton, setShowStickyButton] = useState(false);
 
-  return (
+  useEffect(() => {
+    const scrollEl = scrollRef.current;
+
+    const handleScroll = () => {
+      if (scrollEl.scrollTop > 100) {
+        setShowStickyButton(true);
+      } else {
+        setShowStickyButton(false);
+      }
+    };
+
+    if (scrollEl) {
+      scrollEl.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      if (scrollEl) scrollEl.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return isMobile ? (
     <>
-    
-      {isMobile ? (
-        <div className="scroll-snap-container">
-            <div className={isMobile ? "scroll-snap-section auto-height" : ""}>
-        <Navbar />
+      <Navbar />
+      <div
+        ref={scrollRef}
+        className="scroll-snap-container"
+        style={{
+          height: "100vh",
+          overflowY: "scroll",
+          scrollSnapType: "y mandatory",
+        }}
+      >
+        <section className="scroll-snap-section"><HeroSection showSticky={showStickyButton} /></section>
+        <section className="scroll-snap-section"><WhyMierae /></section>
+        <section className="scroll-snap-section"><HowItWorks /></section>
+        <section className="scroll-snap-section"><SolarSavingsCalculator /></section>
+        <section className="scroll-snap-section"><Cta /></section>
+        <section className="scroll-snap-section"><Testimonial /></section>
+        <section className="scroll-snap-section"><Blog /></section>
+        <section className="scroll-snap-section"><Faq /></section>
+        <section className="scroll-snap-section"><Footer /></section>
       </div>
-          <section className="scroll-snap-section"><HeroSection /></section>
-          <section className="scroll-snap-section"><WhyMierae /></section>
-          <section className="scroll-snap-section"><HowItWorks /></section>
-          <section className="scroll-snap-section"><SolarSavingsCalculator /></section>
-          <section className="scroll-snap-section"><Cta /></section>
-          <section className="scroll-snap-section"><Testimonial /></section>
-          <section className="scroll-snap-section"><Faq /></section>
-          <section className="scroll-snap-section"><Footer /></section>
-        </div>
-      ) : (
-        <div>
-          <HeroSection />
-          <WhyMierae />
-          <HowItWorks />
-          <SolarSavingsCalculator />
-          <Cta />
-          <Testimonial />
-          <Blog />
-          <Faq />
-          <Footer />
-        </div>
-      )}
     </>
+  ) : (
+    <div>
+      <Navbar />
+      <HeroSection />
+      <WhyMierae />
+      <HowItWorks />
+      <SolarSavingsCalculator />
+      <Cta />
+      <Testimonial />
+      <Blog />
+      <Faq />
+      <Footer />
+    </div>
   );
 };
 
