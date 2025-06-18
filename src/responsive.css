@@ -808,7 +808,7 @@
 
 .banner_left_wrapper {
     text-align: center;
-    padding: 50px 25px 0px 25px;
+    padding: 45px 25px 0px 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -823,7 +823,7 @@
     .banner_head {
         font-size: 25px;
         line-height: 32px;
-        padding-top: 18px;
+        padding-top: 15px;
     }
 
     .banner_subhead {
@@ -849,7 +849,7 @@
     .navbar_button {
         background: linear-gradient(90deg, #F19A3E 0%, #FFB05C 100%);
         gap: 18px !important;
-        padding: 12px 12px 12px 19px !important;
+        padding: 10px 12px 10px 19px !important;
         border-radius: 12px !important;
     }
 

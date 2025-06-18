@@ -64,7 +64,7 @@ const HeroSection = () => {
               </motion.p>
 
               <motion.div
-                className="d-flex gap-3 mt-4 mt-lg-4"
+                className="d-flex gap-3 mt-3 mt-lg-4"
                 variants={fadeUp}
               >
                 <div className="button_wrap">
