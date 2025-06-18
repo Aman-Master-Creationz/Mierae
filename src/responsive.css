@@ -1,0 +1,1227 @@
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .navbar_button {
+        padding: 17px 19px !important;
+    }
+
+    .faq_image_wrapper {
+        height: 33rem;
+    }
+
+    /* ============================== Banner ============================== */
+
+    .head_black::before {
+        font-size: 79px;
+    }
+
+
+    .tab_wrapper .head_black::before {
+        font-size: 70px !important;
+    }
+
+    .blog_section .head_black::before {
+        font-size: 66px !important;
+    }
+
+
+    .banner_head {
+        font-size: 40px;
+        line-height: 1.4em;
+    }
+
+    .banner_last_text {
+        font-size: 26.029px;
+    }
+
+    .head_black {
+        font-size: 42px;
+    }
+
+    .head_sub {
+        font-size: 23px;
+    }
+
+    /* ========================== Why Mirae ========================== */
+
+    .card_head {
+        font-size: 26px;
+    }
+
+    .card_img {
+        height: 9rem;
+    }
+
+    /* ========================== Calculator ========================== */
+
+    .solor_list {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .solar_content {
+        font-size: 21px;
+    }
+
+    .solar_card_head {
+        font-size: 45px;
+    }
+
+    .solar_card_sub {
+        font-size: 16px;
+    }
+
+    /* ========================== CTA ========================== */
+
+    p.cta_head {
+
+        font-size: 40px;
+    }
+
+    p.cta_sub {
+        font-size: 21px;
+    }
+
+    p.cta_para {
+        font-size: 20px;
+        width: 29rem;
+        margin-top: -0.6rem !important;
+    }
+
+    .cta_image_wrapper {
+        align-content: center;
+    }
+
+    .top-left-curve {
+        left: 37.5%;
+        width: 265px;
+    }
+
+    /* ========================== crousals ========================== */
+
+    .testimonial-text {
+        font-size: 20px;
+    }
+
+    /* ========================== Blogs ========================== */
+
+    p.blog_head {
+        font-size: 22px;
+    }
+
+    .blog_button {
+        font-size: 16px;
+    }
+
+    /* ========================== FAQ ========================== */
+
+    .faq_left_content_wrapper {
+        font-size: 25px;
+
+    }
+
+    .faq_head {
+        font-size: 45px !important;
+    }
+
+    .faq_contact_head {
+        font-size: 27px;
+
+    }
+
+    /* ========================== Footer CTA ========================== */
+
+    .footer_cta .badge_banner {
+        font-size: 15px !important;
+    }
+
+    .footer_cta_head {
+        font-size: 26px;
+    }
+
+    /* ========================== Footer ========================== */
+
+    .footer_sub {
+        font-size: 14px;
+    }
+
+    .policy_wrapper p {
+        font-size: 13px;
+
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .head_black::before {
+        font-size: 67px;
+    }
+
+
+    .tab_wrapper .head_black::before {
+        font-size: 58px !important;
+    }
+
+    .blog_section .head_black::before {
+        font-size: 54px !important;
+    }
+
+    .section {
+        padding-top: 110px;
+    }
+
+    /* ============================== Header ============================== */
+
+    .nav-link {
+        font-size: 14px !important;
+    }
+
+    .navbar_button {
+        padding: 14px 13px !important;
+    }
+
+    span.nav_text1 {
+        font-size: 13px;
+    }
+
+    span.nav_text2 {
+        font-size: 14px;
+    }
+
+    .navbar-nav {
+        gap: 1rem;
+    }
+
+
+    /* ============================== Banner ============================== */
+    .banner_head {
+        font-size: 32px;
+        line-height: 1.4em;
+    }
+
+    .banner_subhead {
+        font-size: 15px;
+    }
+
+    .banner_last_text {
+        font-size: 22px;
+    }
+
+    .user_image {
+        width: 6rem;
+    }
+
+    .banner_left_wrapper {
+        padding: 70px 30px 50px 30px;
+    }
+
+    .badge_banner {
+        font-size: 18px;
+    }
+
+    /* ========================== Why Mirae ========================== */
+
+    .head_black {
+        font-size: 35px;
+    }
+
+    .head_sub {
+        font-size: 20px;
+    }
+
+    .card_head {
+        font-size: 24px;
+    }
+
+    .card_sub {
+        font-size: 14px;
+    }
+
+    .card_head {
+        margin-top: 2rem;
+    }
+
+    .card_img {
+        height: 8rem;
+    }
+
+    /* ========================== How It Works ========================== */
+
+    .tab_head_cont1_active {
+        font-size: 16px;
+    }
+
+    .tab_head_cont2_active {
+        font-size: 12px;
+    }
+
+    .tab_head_wrapper_active {
+        padding: 20px 18px;
+    }
+
+    .tab_head_cont1 {
+        font-size: 16px;
+    }
+
+    .tab_head_cont2 {
+        font-size: 13px;
+    }
+
+    /* ========================== Calculator ========================== */
+    p.para_common {
+        font-size: 15px;
+    }
+
+    .solor_list {
+        font-size: 15px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .solar_icon_wrapper {
+        padding: 8px 15px;
+    }
+
+    .solar_content {
+        font-size: 18px;
+        line-height: 1.4em;
+    }
+
+    .solar_card_head {
+        font-size: 35px;
+    }
+
+    .solar_card_sub {
+        font-size: 16px;
+    }
+
+    /* ========================== CTA ========================== */
+
+    p.cta_head {
+        font-size: 34px;
+    }
+
+    p.cta_sub {
+        font-size: 18px;
+    }
+
+    p.cta_para {
+        font-size: 17px;
+        width: 25rem;
+        line-height: 1.5em;
+    }
+
+
+    .cta_content_wrapper {
+        gap: 12px;
+        padding: 40px 45px;
+    }
+
+    .cta_button {
+        margin-top: 1rem;
+        width: 11rem;
+    }
+
+    .cta_image_wrapper {
+        align-content: center;
+    }
+
+    /* ========================== Testimonial ========================== */
+
+    .circle {
+        margin-left: 2rem;
+        width: 10rem;
+    }
+
+    .top-left-curve2 {
+        width: 249px !important;
+        height: 62px;
+    }
+
+    .testimonial-text {
+        font-size: 18px;
+        line-height: 1.6em;
+    }
+
+    .top-left-curve {
+        width: 223px;
+        left: 38%;
+    }
+
+    .left_test_arrow {
+        left: -60px;
+        top: 50%;
+    }
+
+    .right_test_arrow {
+        right: -60px;
+        top: 50%;
+    }
+
+    /* ========================== BLog ========================== */
+
+    .blog_content2 {
+        margin-left: 1rem;
+
+    }
+
+    img.right_blog_image,
+    img.right_blog_image {
+        width: 13rem;
+    }
+
+    p.blog_head {
+        font-size: 16px;
+        line-height: 1.4em;
+    }
+
+    p.blog_sub {
+        font-size: 14px;
+    }
+
+
+    .blog_button2 {
+        font-size: 14px;
+        padding: 6px 25px;
+    }
+
+    .blog_head_big {
+        font-size: 19px !important;
+    }
+
+    .blog_sub_big {
+        font-size: 16px !important;
+    }
+
+    .blog_button {
+        padding: 8px 25px;
+        font-size: 17px;
+        margin-top: 0.5rem;
+    }
+
+    /* ========================== FAQ ========================== */
+
+    .faq_left_content_wrapper {
+        font-size: 21px;
+    }
+
+    .faq_contact_head {
+        font-size: 23px;
+    }
+
+    .faq_contact_wrapper {
+        width: 70%;
+    }
+
+    .faq_contact_sub {
+        font-size: 15px;
+    }
+
+    .faq_head {
+        font-size: 38px !important;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    .faq_image_wrapper {
+        height: 30rem;
+    }
+
+    .footer_cta_head {
+        font-size: 28px;
+        width: 62%;
+    }
+
+    .footer_cta .badge_banner {
+        width: 43%;
+    }
+
+    .policy_wrapper p {
+        padding-right: 13px;
+        font-size: 12px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+
+    .footer_sub {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .head_black::before {
+        font-size: 50px;
+        bottom: 68% !important;
+    }
+
+
+    .tab_wrapper .head_black::before {
+        font-size: 42px !important;
+    }
+
+    .section {
+        padding-top: 100px;
+    }
+
+
+    /* ========================== Navbar ========================== */
+
+    .nav-link {
+        font-size: 14px !important;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    /* ========================== Banner ========================== */
+    .badge_banner {
+        font-size: 17px;
+    }
+
+    .banner_head {
+        font-size: 40px;
+        line-height: 1.4em;
+
+    }
+
+    .orange_button,
+    .white_button {
+        font-size: 18px !important;
+    }
+
+    .banner_left_wrapper {
+        padding: 70px 30px 10px 30px;
+    }
+
+
+
+    /* ========================== Why Mirae ========================== */
+    .head_black {
+        font-size: 36px;
+
+    }
+
+    .head_sub {
+        font-size: 16px;
+    }
+
+    .card_head {
+        font-size: 18px;
+        margin-top: 2rem;
+    }
+
+    .card_sub {
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card_img {
+        height: 7rem;
+    }
+
+    .head_wrapper {
+        margin-bottom: 3rem !important;
+    }
+
+    .logo-track img {
+        height: 40px !important;
+    }
+
+    /* ========================== How It Works ========================== */
+    .tab_wrapper {
+        padding: 60px 45px;
+    }
+
+    .number_wrapper {
+        justify-content: center;
+    }
+
+    .tab_head_wrapper_active {
+        margin-bottom: 0rem;
+    }
+
+    .tab_content_wrapper {
+        justify-content: center;
+
+    }
+
+    .tab_content_wrapper img {
+        width: 65%;
+    }
+
+    .tab_head_wrapper {
+        padding: 0px 30px 0px 30px;
+        margin-bottom: 0rem;
+    }
+
+    .marg {
+
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .marg .tab_head_wrapper_active {
+        margin-bottom: 2rem;
+    }
+
+    .tab_num_active {
+        margin-top: -2rem;
+    }
+
+    .tab_num {
+        font-size: 35px;
+    }
+
+    .tab_head_cont1 {
+        font-size: 21px;
+    }
+
+    .tab_head_cont2 {
+        font-size: 16px;
+    }
+
+    .how_it_work_margin {
+        margin-bottom: 1rem !important;
+    }
+
+    /* ========================== Calculator ========================== */
+
+    .solar_image {
+        margin-bottom: 3rem;
+    }
+
+    .solar_content {
+        font-size: 16px;
+        line-height: 1.7em;
+    }
+
+    .solar_card_head {
+        font-size: 28px;
+    }
+
+    .solar_card_sub {
+        font-size: 14px;
+    }
+
+    /* ========================== CTA ========================== */
+
+    p.cta_head {
+        font-size: 30px;
+    }
+
+    p.cta_sub {
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+
+    p.cta_para {
+        font-size: 14px;
+        line-height: 1.6em;
+        width: 21rem;
+    }
+
+    .cta_content_wrapper {
+        padding: 33px;
+        gap: 12px;
+    }
+
+    /* ========================== Testimonial ========================== */
+    .circle {
+        width: 8rem;
+        margin-bottom: -8rem;
+
+    }
+
+    .top-left-curve2 {
+        width: 247px !important;
+        height: 59px;
+    }
+
+    .testimonial_section {
+        margin-top: -1rem;
+    }
+
+    .testimonial_section {
+        margin-top: 0rem;
+    }
+
+    .testimonail_head {
+        padding-top: 80px;
+    }
+
+    .testimonial-text {
+        font-size: 16px;
+        line-height: 1.7em;
+    }
+
+    .top-left-curve {
+        left: 33%;
+        width: 234px;
+        height: 51px;
+    }
+
+    .testimonial-badge {
+        padding: 31px 24px;
+    }
+
+    .left_test_arrow {
+        left: -51px;
+        top: 50%;
+    }
+
+
+    .right_test_arrow {
+        right: -51px;
+        top: 50%;
+    }
+
+    .testimonial {
+        margin-top: 4rem !important;
+    }
+
+    .swiper {
+        padding-top: 5rem !important;
+        padding-bottom: 0px !important;
+    }
+
+    .blog_section {
+        display: none;
+    }
+
+    .faq_image_wrapper {
+        display: none;
+    }
+
+    .faq_head {
+        font-size: 42px !important;
+    }
+
+    /* ========================== Footer CTA ========================== */
+
+    .footer_cta .badge_banner {
+        width: 62%;
+
+    }
+
+    .footer_cta_head {
+        font-size: 28px;
+        width: 86%;
+    }
+
+    .faq_section {
+        padding-bottom: 260px;
+    }
+
+    .footer_info_wrapper {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .inside_wrapper {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .policy_wrapper p {
+        font-size: 13px;
+    }
+
+    .mirae {
+        margin-top: 3rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    body {
+        margin: 0px 10px 0px 10px !important;
+    }
+
+    .head_black::before {
+        display: none;
+    }
+
+
+    .tab_wrapper .head_black::before {
+        display: none;
+    }
+
+    .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+    .calculator {
+        padding-bottom: 50px;
+    }
+
+    .user_image {
+        width: 80%;
+    }
+
+    .card_wrapper .row {
+        gap: 15px;
+    }
+
+    .card_wrapper .card {
+        border-radius: 15px !important;
+    }
+
+    /* ======================================== */
+
+    .mirae_logo_desktop {
+        display: none;
+    }
+
+    .mirae_logo_mobile {
+        display: block;
+    }
+
+    .mobile_nav_image {
+        display: block;
+    }
+
+    .navbar_warpper {
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+
+
+
+.banner_left_wrapper {
+    text-align: center;
+    padding: 50px 25px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .badge_banner {
+        font-size: 17px;
+        padding: 8px 14px;
+    }
+
+    .banner_head {
+        font-size: 25px;
+        line-height: 32px;
+        padding-top: 18px;
+    }
+
+    .banner_subhead {
+        font-size: 17px;
+    }
+
+    .orange_button.not_mobile {
+        display: none;
+    }
+
+    .white_button.not_mobile {
+        display: none;
+    }
+
+    .button_wrap {
+        display: block;
+    }
+
+    .item-center {
+        justify-content: center;
+    }
+
+    .navbar_button {
+        background: linear-gradient(90deg, #F19A3E 0%, #FFB05C 100%);
+        gap: 18px !important;
+        padding: 12px 12px 12px 19px !important;
+        border-radius: 12px !important;
+    }
+
+    span.nav_text1 {
+        font-size: 16px;
+    }
+
+    span.nav_text2 {
+        font-size: 16px;
+        padding: 17px 15px !important;
+    }
+
+    .text_200,
+    .banner_last_text {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .single-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .logo-track img {
+        height: 35px !important;
+    }
+
+    .logo-carousel {
+        padding: 32px;
+        margin-top: 20px !important;
+        border-radius: 12px;
+    }
+
+    .head_black {
+        font-size: 28px !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+        line-height: 20.486px;
+    }
+
+    .accordion-body {
+        font-size: 12px;
+    }
+
+    .head_sub {
+        font-size: 15px;
+        text-transform: none;
+    }
+
+    .head_wrapper {
+        margin-bottom: 2rem !important;
+    }
+
+    .flex-direction {
+        flex-direction: row !important;
+        gap: 25px;
+    }
+
+    .card_img {
+        display: none;
+    }
+
+    .row_gap {
+        gap: 15px;
+    }
+
+    .card_img_mobile {
+        display: block;
+        height: 121px;
+        width: 99px;
+    }
+
+    .together .card_head {
+        text-align: start;
+        font-size: 19px;
+        margin-top: 0px;
+    }
+
+    .together .card_sub {
+        text-align: start;
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .tab_wrapper {
+        padding: 50px 26px 35px 26px;
+    }
+
+    ul.solor_list {
+        flex-direction: column;
+        font-size: 17px;
+        gap: 10px;
+    }
+
+    .padding_mobile {
+        padding-top: 33px;
+    }
+
+    .footer_section {
+        padding: 0px 5px 10px 5px;
+    }
+
+    .form-control {
+        font-size: 1rem !important;
+    }
+
+    .form-select {
+        font-size: 1rem !important;
+    }
+
+    .solar_content {
+        font-size: 13px;
+        line-height: 21.128px;
+    }
+
+    .solar_card {
+        padding: 28px 25px !important;
+        border-radius: 14px !important;
+    }
+
+    .solar_card_head {
+        font-size: 24px;
+    }
+
+    .solar_card_sub {
+        font-size: 14px;
+    }
+
+    p.cta_sub {
+        line-height: 29.299px;
+        font-size: 20px;
+    }
+
+    p.cta_para {
+        font-size: 18.473px;
+        line-height: 28.558px;
+    }
+
+    .cta_button {
+        width: 12rem;
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        padding: 20px !important;
+    }
+
+    .cta-img-desktop {
+        display: none;
+    }
+
+    .cta-img-mobile {
+        display: block;
+    }
+
+    .cta_content_wrapper {
+        padding: 50px 50px 0px 20px;
+    }
+
+    p.cta_head {
+        font-size: 30px;
+        line-height: 1.25em;
+    }
+
+    img.circle {
+        display: none;
+    }
+
+    .testimonail_head {
+        padding-top: 67px;
+    }
+
+    .top-left-curve2 {
+        display: none;
+    }
+
+    .test_wrapper {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        background: white;
+        border-radius: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .testimonial_section {
+        margin-top: -11rem;
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+
+    .testimonial-card {
+        padding: 0px;
+    }
+
+    .top-left-curve {
+        left: 13%;
+        width: 227px;
+        height: 54px;
+    }
+
+    button.btn.btn-light.rounded-circle.shadow.position-absolute {
+        left: -28px !important;
+        z-index: 3;
+    }
+
+    button.btn.btn-warning.text-white.rounded-circle.shadow.position-absolute {
+        right: -28px !important;
+    }
+
+    .swiper {
+        padding-top: 4rem !important;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    section.section.blog_section {
+        display: none;
+    }
+
+    .faq_image_wrapper {
+        display: none;
+    }
+
+    .faq_section {
+        padding-bottom: 520px;
+        padding-top: 67px;
+    }
+
+    .footer_cta .badge_banner {
+        width: 100%;
+        font-size: 14px !important;
+    }
+
+    .footer_cta_head {
+        font-size: 25px;
+        line-height: 44px;
+        width: 100%;
+    }
+
+    .white_button {
+        padding: 21px !important;
+        font-size: 17px !important;
+    }
+
+    .footer_cta {
+        gap: 34px;
+        padding: 50px 20px 120px 20px;
+        margin-top: -29rem;
+    }
+
+    .footer-mob {
+        display: none;
+    }
+
+    .footer_info_wrapper {
+        flex-direction: column;
+        gap: 34px;
+    }
+
+    .footer_head {
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+
+    .footer_sub {
+        font-size: 13px;
+        line-height: 33px;
+    }
+
+    .footer_sub img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .inside_wrapper {
+        flex-direction: column;
+    }
+
+    .policy_wrapper {
+        gap: 0px;
+        flex-wrap: wrap;
+        column-gap: 18px;
+        row-gap: 16px;
+        padding-top: 20px;
+    }
+
+    .policy_wrapper p {
+        line-height: 13px;
+    }
+
+    .mirae {
+        margin-top: 3rem;
+    }
+
+    /* ============================== How it Works ============================= */
+
+    .tab_head_cont1_active {
+        font-size: 16px;
+    }
+
+    .tab_head_wrapper_active {
+        border-radius: 12px;
+        padding: 15px;
+        gap: 15px;
+        align-items: start;
+        margin-bottom: 1.5rem;
+    }
+
+    .tab_head_wrapper {
+        border-radius: 12px;
+        padding: 0px 0px 0px 05px;
+    }
+
+    .tab_head_wrapper_active img {
+        width: 35px;
+    }
+
+    .tab_head_cont1 {
+        font-size: 16px;
+    }
+
+    .tab_head_cont2 {
+        font-size: 13px;
+    }
+
+    .tab_num_active {
+        font-size: 25px;
+    }
+
+    .cud-pad {
+        padding: 0px !important;
+    }
+
+    .marg {
+        margin-bottom: 0rem;
+    }
+
+    .tab_content_wrapper {
+        justify-content: center;
+    }
+
+    .tab_content_wrapper img {
+        width: 75%;
+    }
+
+    .testimonial-card button span {
+        font-size: 14px !important;
+    }
+
+    .test_slider .swiper {
+        padding-top: 1rem !important;
+    }
+
+    .testimonial {
+        max-width: 92% !important;
+        margin-top: 6rem !important;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none !important;
+
+    }
+
+    .footer_icon {
+        margin-right: 5px;
+    }
+
+
+
+}
