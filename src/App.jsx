@@ -10,12 +10,13 @@ import Blog from './Sections/Blogs';
 import Faq from './Sections/Faq';
 import Footer from './components/Footer';
 import Testimonial from './Sections/Testimonial';
+import Allsection from './Sections';
 
 function App() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <HeroSection />
       <WhyMierae />
       <HowItWorks />
@@ -24,7 +25,10 @@ function App() {
       <Testimonial />
       <Blog />
       <Faq />
-      <Footer />
+      <Footer /> */}
+
+      <Navbar />
+      <Allsection />
     </>
   )
 }

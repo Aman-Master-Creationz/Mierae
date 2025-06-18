@@ -108,6 +108,19 @@ p {
     padding-bottom: 80px;
 }
 
+#scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.scroll-section {
+  scroll-snap-align: start;
+  height: 100vh;
+  overflow: hidden;
+}
 
 
 /* ============== navbar -====================== */
