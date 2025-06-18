@@ -761,6 +761,7 @@
 
     body {
         margin: 0px 10px 0px 10px !important;
+        scroll-behavior: smooth;
     }
 
     .crousal {
@@ -778,7 +779,6 @@
   .scroll-snap-section {
     scroll-snap-align: start;
     height: 100vh;
-    overflow: hidden;
   }
 
   .scroll_footer{
