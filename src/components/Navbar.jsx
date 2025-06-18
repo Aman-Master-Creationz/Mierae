@@ -4,30 +4,32 @@ import logo2 from '../assets/images/Mobile_logo.svg';
 import mobileimage from '../assets/images/mobileimg.svg';
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  // const [showNavbar, setShowNavbar] = useState(true);
+  // const [lastScrollY, setLastScrollY] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY && currentScrollY > 80) {
-        setShowNavbar(false); // hide on scroll down
-      } else {
-        setShowNavbar(true); // show on scroll up
-      }
+  //     if (currentScrollY > lastScrollY && currentScrollY > 80) {
+  //       setShowNavbar(false); // hide on scroll down
+  //     } else {
+  //       setShowNavbar(true); // show on scroll up
+  //     }
 
-      setLastScrollY(currentScrollY);
-    };
+  //     setLastScrollY(currentScrollY);
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY]);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, [lastScrollY]);
+
+  // ${showNavbar ? 'show' : 'hide'}
 
   return (
     <>
-    <nav className={`navbar navbar-expand-md navbar-light py-2 sticky-navbar ${showNavbar ? 'show' : 'hide'} d-block d-lg-none`}>
+    <nav className={`navbar navbar-expand-md navbar-light py-2  d-block d-lg-none`}>
       <div className="container nav_cont">
         <div className="navbar_warpper">
 

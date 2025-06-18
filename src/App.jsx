@@ -17,7 +17,6 @@ function App() {
     <>
       <Navbar />
       <HeroSection />
-      <LogoCarousel />
       <WhyMierae />
       <HowItWorks />
       <SolarSavingsCalculator />

@@ -102,6 +102,10 @@
         font-size: 20px;
     }
 
+    .crousal{
+        margin-bottom: 8rem;
+    }
+
     /* ========================== Blogs ========================== */
 
     p.blog_head {
@@ -162,6 +166,9 @@
         font-size: 67px;
     }
 
+       .crousal{
+        margin-bottom: 7rem;
+    }
 
     .tab_wrapper .head_black::before {
         font-size: 58px !important;
@@ -463,6 +470,10 @@
         bottom: 68% !important;
     }
 
+           .crousal{
+        margin-bottom: 5.5rem;
+    }
+
 
     .tab_wrapper .head_black::before {
         font-size: 42px !important;
@@ -752,6 +763,15 @@
         margin: 0px 10px 0px 10px !important;
     }
 
+    .crousal {
+    margin-bottom: 1.5rem;
+}
+
+nav.navbar.navbar-expand-md {
+    position: relative;
+
+}
+
     .head_black::before {
         display: none;
     }
@@ -897,7 +917,7 @@
     }
 
     .logo-carousel {
-        padding: 32px;
+        padding: 20px 32px;
         margin-top: 20px !important;
         border-radius: 12px;
     }
@@ -1221,6 +1241,10 @@
 
     .testimonial-card button span {
         font-size: 14px !important;
+    }
+
+    .card {
+        padding: 20px 30px ;
     }
 
     .test_slider .swiper {

@@ -5,6 +5,7 @@ import Image3 from "../assets/images/service3.svg";
 import Image4 from "../assets/images/service4.svg";
 import Image5 from "../assets/images/service5.svg";
 import Image6 from "../assets/images/service6.svg";
+import LogoCarousel from "./Logocrousal";
 
 // Heading animation
 const headingVariant = {
@@ -70,6 +71,7 @@ const cardData = [
 const WhyMierae = () => {
   return (
     <section className="why_mierae section" id="why">
+      <LogoCarousel />
       <div className="container">
         <div className="row">
           {/* Heading + Subheading */}

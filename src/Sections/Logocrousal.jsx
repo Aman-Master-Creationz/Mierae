@@ -40,8 +40,7 @@ const LogoCarousel = () => {
   const repeatedLogos = [...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos];
 
   return (
-    <section className='crousal'>
-    <div className="container">
+    <div className="container crousal">
       <div className="row ">
 
           <div className='logo-carousel' style={containerStyle}>
@@ -61,7 +60,6 @@ const LogoCarousel = () => {
 
       </div>
     </div>
-    </section>
 
   );
 };
