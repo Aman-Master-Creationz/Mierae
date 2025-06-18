@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/images/logo.svg';
 import logo2 from '../assets/images/Mobile_logo.svg';
-import mobileimage from '../assets/images/mobileimage.svg';
+import mobileimage from '../assets/images/mobileimg.svg';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
