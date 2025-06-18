@@ -57,7 +57,7 @@ const HeroSection = () => {
               </motion.h1>
 
               <motion.p
-                className="mt-3 banner_subhead"
+                className="mt-2 mt-md-3 banner_subhead"
                 variants={fadeUp}
               >
                 You Can Also Get A Govt. Subsidy & Save ₹4,000/Month Too!
