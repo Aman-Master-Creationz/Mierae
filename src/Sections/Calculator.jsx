@@ -50,7 +50,7 @@ const SolarSavingsCalculator = () => {
                         <li>• Get clarity in seconds</li>
                     </ul>
 
-                    <form className="mt-3 mt-lg-2" onSubmit={handleSubmit}>
+                    <form className="mt-0 md-mt-3 mt-lg-2" onSubmit={handleSubmit}>
                         <div className="mb-3 d-flex solar_icon_wrapper">
                             <img src={RupeeIcon} alt='logo' />
                             <input

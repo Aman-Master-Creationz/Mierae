@@ -788,6 +788,10 @@
   display: none;
 }
 
+.para_common{
+    font-size: 14px;
+}
+
 
 nav.navbar.navbar-expand-md {
     position: relative;
@@ -816,7 +820,7 @@ nav.navbar.navbar-expand-md {
     }
 
     .cta_section{
-        padding-top: 60px;
+        padding-top: 30px;
     }
 
     .user_image {
@@ -987,20 +991,24 @@ nav.navbar.navbar-expand-md {
 
     .card_img_mobile {
         display: block;
-        height: 121px;
+        height: 100px;
         width: 99px;
     }
 
+    .together {
+    width: 54%;
+}
+
     .together .card_head {
         text-align: start;
-        font-size: 19px;
+        font-size: 16px;
         margin-top: 0px;
     }
 
     .together .card_sub {
         text-align: start;
-        font-size: 15px;
-        line-height: 23px;
+        font-size: 13px;
+        line-height: 1.4em;
     }
 
     .tab_wrapper {
@@ -1014,7 +1022,7 @@ nav.navbar.navbar-expand-md {
     }
 
     .padding_mobile {
-        padding-top: 33px;
+        padding-top: 22px;
     }
 
     .footer_section {
@@ -1086,7 +1094,7 @@ nav.navbar.navbar-expand-md {
     }
 
     .testimonail_head {
-        padding-top: 98px;
+        padding-top: 60px;
     }
 
     .top-left-curve2 {
