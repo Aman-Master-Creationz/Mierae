@@ -4,7 +4,7 @@ import Phone from '../assets/images/phone.svg';
 import Mail from '../assets/images/mail.svg';
 import Insta from '../assets/images/insta.svg';
 import Fb from '../assets/images/facebook.svg';
-import Link from '../assets/images/Link.svg';
+import Link from '../assets/images/link.svg';
 import Youtube from '../assets/images/youtube.svg';
 import Mirae from '../assets/images/mierae_footer.svg';
 import Cta from '../assets/images/footer_cta.png';
