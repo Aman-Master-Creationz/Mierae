@@ -782,8 +782,11 @@
   }
 
   .auto-height {
-    height: auto !important;
+    height: fit-content !important;
   }
+  .scroll-snap-container::-webkit-scrollbar {
+  display: none;
+}
 
 
 nav.navbar.navbar-expand-md {
