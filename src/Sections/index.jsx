@@ -14,20 +14,34 @@ const Allsection = () => {
 
   return (
     <>
-      <div className={isMobile ? "scroll-snap-container" : ""}>
-        <div className={isMobile ? "scroll-snap-section auto-height" : ""}>
+    
+      {isMobile ? (
+        <div className="scroll-snap-container">
+            <div className={isMobile ? "scroll-snap-section auto-height" : ""}>
         <Navbar />
       </div>
-        <section className="scroll-snap-section"><HeroSection /></section>
-        <section className="scroll-snap-section"><WhyMierae /></section>
-        <section className="scroll-snap-section"><HowItWorks /></section>
-        <section className="scroll-snap-section"><SolarSavingsCalculator /></section>
-        <section className="scroll-snap-section"><Cta /></section>
-        <section className="scroll-snap-section"><Testimonial /></section>
-        <section className="scroll-snap-section"><Blog /></section>
-        <section className="scroll-snap-section"><Faq /></section>
-        <section className="scroll-snap-section"><Footer /></section>
-      </div>
+          <section className="scroll-snap-section"><HeroSection /></section>
+          <section className="scroll-snap-section"><WhyMierae /></section>
+          <section className="scroll-snap-section"><HowItWorks /></section>
+          <section className="scroll-snap-section"><SolarSavingsCalculator /></section>
+          <section className="scroll-snap-section"><Cta /></section>
+          <section className="scroll-snap-section"><Testimonial /></section>
+          <section className="scroll-snap-section"><Faq /></section>
+          <section className="scroll-snap-section"><Footer /></section>
+        </div>
+      ) : (
+        <div>
+          <HeroSection />
+          <WhyMierae />
+          <HowItWorks />
+          <SolarSavingsCalculator />
+          <Cta />
+          <Testimonial />
+          <Blog />
+          <Faq />
+          <Footer />
+        </div>
+      )}
     </>
   );
 };

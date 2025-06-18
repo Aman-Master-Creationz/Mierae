@@ -3,7 +3,7 @@ import CtaImage from '../assets/images/cta-iamge.png';
 import CtaImageMob from '../assets/images/cta-iamge-mob.png';
 const Cta = () => {
     return (
-        <section>
+        <section className='cta_section'>
             <div className="container">
 
                 <div className="cta_wrapper">

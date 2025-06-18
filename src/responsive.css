@@ -811,7 +811,12 @@ nav.navbar.navbar-expand-md {
 
 
     .calculator {
+        padding-top: 20px;
         padding-bottom: 50px;
+    }
+
+    .cta_section{
+        padding-top: 60px;
     }
 
     .user_image {
@@ -1013,7 +1018,7 @@ nav.navbar.navbar-expand-md {
     }
 
     .footer_section {
-        padding: 0px 5px 10px 5px;
+        padding: 445px 5px 10px 5px;
     }
 
     .form-control {
@@ -1081,7 +1086,7 @@ nav.navbar.navbar-expand-md {
     }
 
     .testimonail_head {
-        padding-top: 67px;
+        padding-top: 98px;
     }
 
     .top-left-curve2 {
