@@ -12,21 +12,21 @@ import solar3 from "../assets/images/person3.png";
 const people = [
   {
     image: solar1,
-    name: "Aman Singh",
-    title: "Creative Director",
-    content: "Aman leads the creative strategy with 10+ years of experience.",
+    name: "Mr. Ravi Kumar",
+    title: "Sompeta, Srikakaulam, AP",
+    content: "I was worried about paperwork and government approvals, but Mierae took care of it all. The team was quick, polite, and very transparent throughout the process.",
   },
   {
     image: solar2,
-    name: "Sarah Lee",
-    title: "Product Designer",
-    content: "Sarah designs interfaces that users love.",
+    name: "Mr. Ravi Kumar",
+    title: "Sompeta, Srikakaulam, AP",
+    content: "I was worried about paperwork and government approvals, but Mierae took care of it all. The team was quick, polite, and very transparent throughout the process.",
   },
   {
     image: solar3,
-    name: "John Doe",
-    title: "Developer",
-    content: "John builds fast, accessible websites and apps.",
+    name: "Mr. Ravi Kumar",
+    title: "Sompeta, Srikakaulam, AP",
+    content: "I was worried about paperwork and government approvals, but Mierae took care of it all. The team was quick, polite, and very transparent throughout the process.",
   },
 ];
 
