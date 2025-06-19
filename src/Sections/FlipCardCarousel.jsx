@@ -57,7 +57,7 @@ const FlipCardCarousel = () => {
     <div className="flip-carousel-wrapper">
       <Swiper
         spaceBetween={20}
-        slidesPerView={1.2}
+        slidesPerView={1}
         breakpoints={{ 768: { slidesPerView: 3 } }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: true }}

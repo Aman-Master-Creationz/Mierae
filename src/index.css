@@ -1189,10 +1189,15 @@ img.right_blog_image {
 
 
 
-
-.flip-carousel-wrapper {
-  padding: 40px 20px;
+.flip-carousel-wrapper .swiper{
+padding-bottom: 3rem !important;
 }
+
+.flip-carousel-wrapper .swiper-pagination {
+    top: 24rem !important;
+}
+
+
 
 .flip-card {
   perspective: 1000px;
