@@ -781,7 +781,7 @@
     .scroll-snap-container {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
-        min-height: 80vh;
+        min-height: 100vh;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
         padding-top: env(safe-area-inset-top);
@@ -790,7 +790,7 @@
 
 .scroll-snap-section {
     scroll-snap-align: start;
-    height: 80vh; /* <-- This is the key change */
+    height: 100vh; /* <-- This is the key change */
     flex-shrink: 0;
 }
 

@@ -90,7 +90,6 @@ const Allsection = () => {
             <HowItWorksPc />
             <SolarSavingsCalculator />
             <Cta />
-            <FlipCardCarousel />
             <Testimonial />
             <Blog />
             <Faq />
