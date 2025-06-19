@@ -102,7 +102,7 @@
         font-size: 20px;
     }
 
-    .crousal{
+    .crousal {
         margin-bottom: 8rem;
     }
 
@@ -166,7 +166,7 @@
         font-size: 67px;
     }
 
-       .crousal{
+    .crousal {
         margin-bottom: 7rem;
     }
 
@@ -470,7 +470,7 @@
         bottom: 68% !important;
     }
 
-           .crousal{
+    .crousal {
         margin-bottom: 5.5rem;
     }
 
@@ -765,43 +765,49 @@
     }
 
     .crousal {
-    margin-bottom: 1.5rem;
-}
+        margin-bottom: 1.5rem;
+    }
 
- .scroll-snap-container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
+    .scroll-snap-container {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        min-height: 100vh;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
 
-  .scroll-snap-section {
-    scroll-snap-align: start;
-    height: 100vh;
-  }
-
-  .scroll_footer{
-    overflow: visible !important;
-    height: auto !important;
-  }
-
-  .auto-height {
-    height: fit-content !important;
-  }
-  .scroll-snap-container::-webkit-scrollbar {
-  display: none;
-}
-
-.para_common{
-    font-size: 14px;
-}
+    .scroll-snap-section {
+        scroll-snap-align: start;
+        min-height: 100vh;
+    }
 
 
-nav.navbar.navbar-expand-md {
-    position: relative;
 
-}
+    .scroll_footer {
+        overflow: visible !important;
+        height: auto !important;
+    }
+
+    .cust_height{
+        min-height: 150vh !important;
+    }
+    .auto-height {
+        min-height: fit-content !important;
+    }
+
+    .scroll-snap-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .para_common {
+        font-size: 12px;
+    }
+
+
+    nav.navbar.navbar-expand-md {
+        position: relative;
+
+    }
 
     .head_black::before {
         display: none;
@@ -813,9 +819,9 @@ nav.navbar.navbar-expand-md {
     }
 
     .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
 
 
@@ -824,7 +830,7 @@ nav.navbar.navbar-expand-md {
         padding-bottom: 50px;
     }
 
-    .cta_section{
+    .cta_section {
         padding-top: 30px;
     }
 
@@ -860,18 +866,18 @@ nav.navbar.navbar-expand-md {
     }
 
 
-    .her0_section{
+    .her0_section {
         margin-top: 10px;
     }
 
-.banner_left_wrapper {
-    text-align: center;
-    padding: 45px 25px 0px 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .banner_left_wrapper {
+        text-align: center;
+        padding: 45px 25px 0px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .badge_banner {
         font-size: 17px;
@@ -901,19 +907,19 @@ nav.navbar.navbar-expand-md {
     }
 
     .button_wrap {
-  position: relative;
-  transition: all 0.3s ease-in-out;
-  z-index: 10;
-}
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        z-index: 10;
+    }
 
-.button_wrap.sticky_show {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50px;
-    width: 73%;
-}
+    .button_wrap.sticky_show {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50px;
+        width: 73%;
+    }
 
 
 
@@ -961,7 +967,7 @@ nav.navbar.navbar-expand-md {
     }
 
     .head_black {
-        font-size: 28px !important;
+        font-size: 21px !important;
     }
 
     .accordion-button:not(.collapsed) {
@@ -973,12 +979,12 @@ nav.navbar.navbar-expand-md {
     }
 
     .head_sub {
-        font-size: 15px;
+        font-size: 12px;
         text-transform: none;
     }
 
     .head_wrapper {
-        margin-bottom: 2rem !important;
+        margin-bottom: 1.5rem !important;
     }
 
     .flex-direction {
@@ -1001,8 +1007,8 @@ nav.navbar.navbar-expand-md {
     }
 
     .together {
-    width: 54%;
-}
+        width: 54%;
+    }
 
     .together .card_head {
         text-align: start;
@@ -1017,12 +1023,11 @@ nav.navbar.navbar-expand-md {
     }
 
     .tab_wrapper {
-        padding: 50px 26px 35px 26px;
+        padding: 25px 26px 0px 26px;
     }
 
     ul.solor_list {
-        flex-direction: column;
-        font-size: 17px;
+        font-size: 13px;
         gap: 10px;
     }
 
@@ -1035,29 +1040,32 @@ nav.navbar.navbar-expand-md {
     }
 
     .form-control {
-        font-size: 1rem !important;
+        font-size: 13px !important;
     }
 
     .form-select {
-        font-size: 1rem !important;
+        font-size: 13px !important;
     }
 
     .solar_content {
-        font-size: 13px;
-        line-height: 21.128px;
+       font-size: 12px;
+        line-height: 1.7em;
     }
 
     .solar_card {
-        padding: 28px 25px !important;
+        padding: 18px 16px !important;
         border-radius: 14px !important;
+    }
+    .solar_icon_wrapper{
+            padding: 8px 15px;
     }
 
     .solar_card_head {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .solar_card_sub {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     p.cta_sub {
@@ -1286,7 +1294,7 @@ nav.navbar.navbar-expand-md {
     }
 
     .card {
-        padding: 20px 30px ;
+        padding: 20px 30px;
     }
 
     .test_slider .swiper {
