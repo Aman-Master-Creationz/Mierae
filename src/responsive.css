@@ -1125,7 +1125,7 @@
     }
 
     .testimonail_head {
-        padding-top: 85px;
+        padding-top: 110px;
     }
 
     .top-left-curve2 {
@@ -1144,9 +1144,10 @@
     }
 
 .testimonial_section {
-    margin-top: -9rem;
-    padding-top: 129px;
-    padding-bottom: 110px;
+    margin-top: -7rem;
+    padding-top: 104px;
+    padding-bottom: 55px;
+    border-radius: 20px;
 }
     .testimonial-card {
         padding: 0px;
