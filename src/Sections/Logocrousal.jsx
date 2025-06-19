@@ -37,7 +37,7 @@ const LogoCarousel = () => {
   `;
 
   // Repeat logos more than twice to ensure smooth loop (5 * 3 = 15 slides)
-  const repeatedLogos = [...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos];
+  const repeatedLogos = [...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos];
 
   return (
     <div className="container crousal">

@@ -6,6 +6,15 @@ body {
      scroll-behavior: smooth;
 }
 
+
+#home,
+#how,
+#calculator1,
+#contact {
+  scroll-margin-top: 80px; /* Match or slightly more than your sticky navbar height */
+}
+
+
 .button_wrap{
     display: none;
 }
@@ -19,6 +28,14 @@ body {
 }
 
 
+.form-control:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.form-select:focus {
+    box-shadow: none !important;
+}
 
 
 

@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className={`navbar navbar-expand-md navbar-light py-2  d-block d-lg-none`}>
+    <nav className={`navbar navbar-expand-md navbar-light py-2  d-block d-md-none`}>
       <div className="container nav_cont">
         <div className="navbar_warpper">
 
@@ -47,7 +47,7 @@ const Navbar = () => {
 
 
 
-    <nav className={`navbar navbar-expand-md navbar-light py-2 sticky-navbar d-none d-lg-block`}>
+    <nav className={`navbar navbar-expand-md navbar-light py-2 sticky-navbar d-none d-md-block`}>
       <div className="container nav_cont">
         <div className="navbar_warpper">
 
