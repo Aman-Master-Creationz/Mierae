@@ -14,7 +14,20 @@ const tabs = [
         image: tabImg1,
         icon: tabIcon1,
     },
-    
+    {
+        id: 2,
+        label: 'Fast & Easy Installation',
+        para: 'We install panels using premium equipment and care.',
+        image: tabImg1,
+        icon: tabIcon2,
+    },
+    {
+        id: 3,
+        label: 'Subsidy & System Activation',
+        para: 'We manage approvals and start your solar savings.',
+        image: tabImg1,
+        icon: tabIcon3,
+    },
 ];
 
 const HowItWorks = () => {

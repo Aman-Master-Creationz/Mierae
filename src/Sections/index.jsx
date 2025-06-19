@@ -15,6 +15,9 @@ const Allsection = () => {
     const scrollRef = useRef(null);
     const [showStickyButton, setShowStickyButton] = useState(false);
 
+
+
+
     useEffect(() => {
         const scrollEl = scrollRef.current;
 
@@ -35,15 +38,29 @@ const Allsection = () => {
         };
     }, []);
 
+    useEffect(() => {
+        const setVh = () => {
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        };
+
+        setVh();
+        window.addEventListener('resize', setVh);
+        return () => window.removeEventListener('resize', setVh);
+    }, []);
+
+
     return isMobile ? (
         <>
             <div
                 ref={scrollRef}
                 className="scroll-snap-container"
                 style={{
-                    height: "100vh",
+                    height: "calc(var(--vh, 1vh) * 100)",
                     overflowY: "scroll",
                     scrollSnapType: "y mandatory",
+                    paddingTop: "env(safe-area-inset-top)",
+                    paddingBottom: "env(safe-area-inset-bottom)",
                 }}
             >
                 <div className={isMobile ? "scroll-snap-section auto-height" : ""}>
@@ -51,7 +68,9 @@ const Allsection = () => {
                 </div>
                 <section className="scroll-snap-section"><HeroSection showSticky={showStickyButton} /></section>
                 <section className="scroll-snap-section"><WhyMierae /></section>
-                <section className="scroll-snap-section"><HowItWorks /></section>
+                <section className="scroll-snap-section" ><HowItWorks /></section>
+                <section className="scroll-snap-section" ><HowItWorks /></section>
+                <section className="scroll-snap-section" ><HowItWorks /></section>
                 <section className="scroll-snap-section"><SolarSavingsCalculator /></section>
                 <section className="scroll-snap-section"><Cta /></section>
                 <section className="scroll-snap-section"><Testimonial /></section>
