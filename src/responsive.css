@@ -764,9 +764,10 @@
         scroll-behavior: smooth;
     }
 
-     .tab_head_cont2_active {
+    .tab_head_cont2_active {
         font-size: 11px;
     }
+
     .crousal {
         margin-bottom: 1.5rem;
     }
@@ -774,14 +775,16 @@
     .scroll-snap-container {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
-        min-height: 100vh;
+        min-height: 100dvh;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
     }
 
     .scroll-snap-section {
         scroll-snap-align: start;
-        min-height: 100vh;
+        min-height: 100dvh;
     }
 
 
@@ -791,13 +794,14 @@
         height: auto !important;
     }
 
-    .mobile_height_calc{
-        height: 60vh !important;
+    .mobile_height_calc {
+        height: 60dvh !important;
     }
 
-    .faq_snap_height{
-        min-height: 50vh !important;
+    .faq_snap_height {
+        min-height: 50dvh !important;
     }
+
     .auto-height {
         min-height: fit-content !important;
     }
@@ -1055,7 +1059,7 @@
     }
 
     .solar_content {
-       font-size: 12px;
+        font-size: 12px;
         line-height: 1.7em;
     }
 
@@ -1063,8 +1067,9 @@
         padding: 18px 16px !important;
         border-radius: 14px !important;
     }
-    .solar_icon_wrapper{
-            padding: 8px 15px;
+
+    .solar_icon_wrapper {
+        padding: 8px 15px;
     }
 
     .solar_card_head {
