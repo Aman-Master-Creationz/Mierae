@@ -1343,9 +1343,9 @@
 
 
 
-@supports (-webkit-touch-callout: none) {
+/* @supports (-webkit-touch-callout: none) {
   body{
     background-color: #F19A3E !important;
   }
-}
+} */
 
