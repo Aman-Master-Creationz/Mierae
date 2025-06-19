@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import { motion } from "framer-motion";
+import "swiper/css";
+import "swiper/css/pagination";
 
 import solar1 from "../assets/images/person1.png";
 import solar2 from "../assets/images/person2.png";
@@ -31,78 +33,66 @@ const people = [
 const FlipCardCarousel = () => {
   const [flippedIndex, setFlippedIndex] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
-  const sliderRef = useRef(null);
+  const swiperRef = useRef(null);
 
   useEffect(() => {
-    const detectMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+    const detectMobile = () => setIsMobile(window.innerWidth < 768);
     detectMobile();
     window.addEventListener("resize", detectMobile);
     return () => window.removeEventListener("resize", detectMobile);
   }, []);
 
-  const toggleFlip = (index) => {
+  const handleCardClick = (index) => {
     if (isMobile) {
       const newIndex = flippedIndex === index ? null : index;
       setFlippedIndex(newIndex);
 
-      setTimeout(() => {
-        if (sliderRef.current) {
-          if (newIndex !== null) {
-            sliderRef.current.slickPause();
-          } else {
-            sliderRef.current.slickPlay();
-          }
-        }
-      }, 100);
+      if (swiperRef.current?.autoplay) {
+        newIndex !== null ? swiperRef.current.autoplay.stop() : swiperRef.current.autoplay.start();
+      }
     }
-  };
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 800,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    pauseOnHover: true,
-    pauseOnFocus: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
   };
 
   return (
     <div className="flip-carousel-wrapper">
-      <Slider {...settings} ref={sliderRef}>
+      <Swiper
+        spaceBetween={20}
+        slidesPerView={1.2}
+        breakpoints={{ 768: { slidesPerView: 3 } }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        loop={true}
+        modules={[Autoplay, Pagination]}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+      >
         {people.map((person, index) => (
-          <div
-            key={index}
-            className={`flip-card ${isMobile && flippedIndex === index ? "flipped" : ""}`}
-            onClick={() => toggleFlip(index)}
-          >
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img src={person.image} alt={person.name} />
-                <div className="info">
-                  <h4>{person.name}</h4>
-                  <p>{person.title}</p>
+          <SwiperSlide key={index}>
+            <div
+              className={`flip-card ${isMobile && flippedIndex === index ? "flipped" : ""}`}
+              onClick={() => handleCardClick(index)}
+            >
+              <motion.div
+                className="flip-card-inner"
+                animate={{ rotateY: isMobile
+                  ? flippedIndex === index ? 180 : 0
+                  : 0 }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="flip-card-front">
+                  <img src={person.image} alt={person.name} />
+                  <div className="info">
+                    <h4>{person.name}</h4>
+                    <p>{person.title}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flip-card-back">
-                <p>{person.content}</p>
-              </div>
+                <div className="flip-card-back">
+                  <p>{person.content}</p>
+                </div>
+              </motion.div>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </Slider>
+      </Swiper>
     </div>
   );
 };
