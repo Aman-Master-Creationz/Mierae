@@ -789,7 +789,7 @@
     }
 
     .cust_height{
-        min-height: 150vh !important;
+        min-height: 120vh !important;
     }
     .auto-height {
         min-height: fit-content !important;
