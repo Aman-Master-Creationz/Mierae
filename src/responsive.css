@@ -791,6 +791,10 @@
     .mobile_height_calc{
         height: 60vh !important;
     }
+
+    .faq_snap_height{
+        min-height: 70vh !important;
+    }
     .auto-height {
         min-height: fit-content !important;
     }

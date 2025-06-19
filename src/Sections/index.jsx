@@ -55,7 +55,7 @@ const Allsection = () => {
                 <section className="scroll-snap-section"><SolarSavingsCalculator /></section>
                 <section className="scroll-snap-section"><Cta /></section>
                 <section className="scroll-snap-section"><Testimonial /></section>
-                <section className="scroll-snap-section"><Faq /></section>
+                <section className="scroll-snap-section faq_snap_height"><Faq /></section>
                 <section className="scroll-snap-section scroll_footer"><Footer /></section>
             </div>
         </>
