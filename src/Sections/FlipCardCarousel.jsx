@@ -44,19 +44,18 @@ const FlipCardCarousel = () => {
 
   const toggleFlip = (index) => {
     if (isMobile) {
-      const isFlipping = flippedIndex !== index;
-      const newIndex = isFlipping ? index : null;
+      const newIndex = flippedIndex === index ? null : index;
       setFlippedIndex(newIndex);
 
       setTimeout(() => {
         if (sliderRef.current) {
-          if (isFlipping) {
+          if (newIndex !== null) {
             sliderRef.current.slickPause();
           } else {
             sliderRef.current.slickPlay();
           }
         }
-      }, 300);
+      }, 100);
     }
   };
 
