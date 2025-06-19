@@ -33,7 +33,6 @@ const FlipCardCarousel = () => {
   const [isMobile, setIsMobile] = useState(false);
   const sliderRef = useRef(null);
 
-  // Detect mobile devices
   useEffect(() => {
     const detectMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -43,23 +42,21 @@ const FlipCardCarousel = () => {
     return () => window.removeEventListener("resize", detectMobile);
   }, []);
 
-  // Toggle flip on mobile and control autoplay
   const toggleFlip = (index) => {
     if (isMobile) {
       const isFlipping = flippedIndex !== index;
       const newIndex = isFlipping ? index : null;
       setFlippedIndex(newIndex);
 
-      // Pause if card is being flipped open, resume if flipped back
       setTimeout(() => {
         if (sliderRef.current) {
           if (isFlipping) {
-            sliderRef.current.slickPause(); // stop autoplay
+            sliderRef.current.slickPause();
           } else {
-            sliderRef.current.slickPlay(); // resume autoplay
+            sliderRef.current.slickPlay();
           }
         }
-      }, 300); // small delay to avoid conflict with animation
+      }, 300);
     }
   };
 
@@ -94,7 +91,11 @@ const FlipCardCarousel = () => {
           >
             <div
               className={`flip-card-inner ${
-                isMobile && flippedIndex === index ? "flipped" : ""
+                isMobile
+                  ? flippedIndex === index
+                    ? "flipped"
+                    : ""
+                  : ""
               }`}
             >
               <div className="flip-card-front">
