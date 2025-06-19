@@ -759,18 +759,10 @@
 
 @media (max-width: 767px) {
 
-
-    html, body {
-         margin: 0px 10px 0px 10px !important;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100%;
-  }
-
-  .snap-section {
-    scroll-snap-align: start;
-    height: 100vh;
-  }
+    body {
+        margin: 0px 10px 0px 10px !important;
+        scroll-behavior: smooth;
+    }
 
     .tab_head_cont2_active {
         font-size: 11px;
@@ -786,7 +778,7 @@
 .testimonail_head .head_black{
     font-size: 23px !important;
 }
-    /* .scroll-snap-container {
+    .scroll-snap-container {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
         min-height: 100vh;
@@ -822,7 +814,7 @@
 
     .scroll-snap-container::-webkit-scrollbar {
         display: none;
-    } */
+    }
 
     .para_common {
         font-size: 12px;
