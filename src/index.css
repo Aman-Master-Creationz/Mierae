@@ -1217,8 +1217,8 @@ img.right_blog_image {
   }
 }
 
-/* Flip class for mobile */
-.flipped {
+/* Flip class for mobile (now applied to outer flip-card) */
+.flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -1259,15 +1259,13 @@ img.right_blog_image {
   text-align: center;
 }
 
-
-/* Make all dots gray by default */
+/* Slick dots styling */
 .slick-dots li button:before {
   font-size: 9px !important;
-  color: #ccc; /* light gray */
+  color: #ccc !important;
   opacity: 1;
 }
 
-/* Make active dot green */
 .slick-dots li.slick-active button:before {
-  color: #28a745 !important; /* green */
+  color: #28a745 !important;
 }

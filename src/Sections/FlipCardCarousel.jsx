@@ -86,18 +86,10 @@ const FlipCardCarousel = () => {
         {people.map((person, index) => (
           <div
             key={index}
-            className="flip-card"
+            className={`flip-card ${isMobile && flippedIndex === index ? "flipped" : ""}`}
             onClick={() => toggleFlip(index)}
           >
-            <div
-              className={`flip-card-inner ${
-                isMobile
-                  ? flippedIndex === index
-                    ? "flipped"
-                    : ""
-                  : ""
-              }`}
-            >
+            <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img src={person.image} alt={person.name} />
                 <div className="info">
