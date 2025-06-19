@@ -788,8 +788,8 @@
         height: auto !important;
     }
 
-    .cust_height{
-        min-height: 120vh !important;
+    .mobile_height_calc{
+        height: 60vh !important;
     }
     .auto-height {
         min-height: fit-content !important;

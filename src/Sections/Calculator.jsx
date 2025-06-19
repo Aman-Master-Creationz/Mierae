@@ -101,7 +101,7 @@ const SolarSavingsCalculator = () => {
 
         {/* Results Section */}
         {submitted && (
-          <div ref={detailsRef} className="results-wrapper mt-5">
+          <div ref={detailsRef} className="results-wrapper mt-5 mobile_height_calc">
             <div className="row details">
               <div className="col-md-4 col-6 mb-4 align-content-center">
                 <p className="solar_content">

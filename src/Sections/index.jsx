@@ -52,7 +52,7 @@ const Allsection = () => {
                 <section className="scroll-snap-section"><HeroSection showSticky={showStickyButton} /></section>
                 <section className="scroll-snap-section"><WhyMierae /></section>
                 <section className="scroll-snap-section"><HowItWorks /></section>
-                <section className="scroll-snap-section cust_height"><SolarSavingsCalculator /></section>
+                <section className="scroll-snap-section"><SolarSavingsCalculator /></section>
                 <section className="scroll-snap-section"><Cta /></section>
                 <section className="scroll-snap-section"><Testimonial /></section>
                 <section className="scroll-snap-section"><Faq /></section>
