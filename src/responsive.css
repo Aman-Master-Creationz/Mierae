@@ -764,6 +764,9 @@
         scroll-behavior: smooth;
     }
 
+     .tab_head_cont2_active {
+        font-size: 11px;
+    }
     .crousal {
         margin-bottom: 1.5rem;
     }
@@ -793,7 +796,7 @@
     }
 
     .faq_snap_height{
-        min-height: 70vh !important;
+        min-height: 50vh !important;
     }
     .auto-height {
         min-height: fit-content !important;
@@ -1098,7 +1101,7 @@
     }
 
     .cta_content_wrapper {
-        padding: 50px 50px 0px 20px;
+        padding: 35px 50px 0px 20px;
     }
 
     p.cta_head {
@@ -1111,7 +1114,7 @@
     }
 
     .testimonail_head {
-        padding-top: 60px;
+        padding-top: 40px;
     }
 
     .top-left-curve2 {
@@ -1130,7 +1133,7 @@
     }
 
     .testimonial_section {
-        margin-top: -11rem;
+        margin-top: -6rem;
         padding-top: 100px;
         padding-bottom: 0px;
     }
@@ -1172,7 +1175,6 @@
     }
 
     .faq_section {
-        padding-bottom: 520px;
         padding-top: 67px;
     }
 
@@ -1250,7 +1252,7 @@
 
     .tab_head_wrapper_active {
         border-radius: 12px;
-        padding: 15px;
+        padding: 10px 12px;
         gap: 15px;
         align-items: start;
         margin-bottom: 1.5rem;
@@ -1266,11 +1268,11 @@
     }
 
     .tab_head_cont1 {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .tab_head_cont2 {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .tab_num_active {
@@ -1290,7 +1292,7 @@
     }
 
     .tab_content_wrapper img {
-        width: 75%;
+        width: 68%;
     }
 
     .testimonial-card button span {
@@ -1298,7 +1300,7 @@
     }
 
     .card {
-        padding: 20px 30px;
+        padding: 15px 30px;
     }
 
     .test_slider .swiper {
@@ -1307,7 +1309,7 @@
 
     .testimonial {
         max-width: 92% !important;
-        margin-top: 6rem !important;
+        margin-top: 0rem !important;
     }
 
     .swiper-button-prev,
