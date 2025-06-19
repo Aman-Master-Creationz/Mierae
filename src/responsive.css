@@ -1043,7 +1043,7 @@
     }
 
     .footer_section {
-        padding: 445px 5px 10px 5px;
+        padding: 445px 5px 110px 5px;
     }
 
     .form-control {
@@ -1076,8 +1076,8 @@
     }
 
     p.cta_sub {
-        line-height: 29.299px;
-        font-size: 20px;
+        line-height: 1.3empx;
+        font-size: 18px;
     }
 
     p.cta_para {
@@ -1105,7 +1105,7 @@
     }
 
     p.cta_head {
-        font-size: 30px;
+        font-size: 27px;
         line-height: 1.25em;
     }
 
