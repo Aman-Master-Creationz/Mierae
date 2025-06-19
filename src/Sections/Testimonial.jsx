@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 
 import circle from '../assets/images/circle.svg';
 import TestimonialSlider from '../components/Testimonialslider';
+import FlipCardCarousel from './FlipCardCarousel';
 
 const testimonials = [
     {
@@ -46,7 +47,7 @@ const Testimonial = () => {
             </section>
 
             <section className="testimonial_section">
-                <div className="container">
+                <div className="container d-none d-md-block">
                     <div className="row position-relative">
                         <div className="top-left-curve2">
                             <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -94,6 +95,12 @@ const Testimonial = () => {
                         <div className="photo_crousal mt-5">
                             <TestimonialSlider />
                         </div>
+                    </div>
+                </div>
+
+                <div className="container d-block d-md-none">
+                    <div className="row">
+                        <FlipCardCarousel />
                     </div>
                 </div>
             </section>

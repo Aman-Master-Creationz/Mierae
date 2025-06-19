@@ -11,6 +11,8 @@ import Faq from "./Faq";
 import Footer from "../components/Footer";
 import HowItWorks2 from "./How It Works2";
 import HowItWorks3 from "./How It Works3";
+import HowItWorksPc from "./How It Works Pc";
+import FlipCardCarousel from "./FlipCardCarousel";
 
 const Allsection = () => {
     const isMobile = window.innerWidth <= 767;
@@ -85,9 +87,10 @@ const Allsection = () => {
             <Navbar />
             <HeroSection />
             <WhyMierae />
-            <HowItWorks />
+            <HowItWorksPc />
             <SolarSavingsCalculator />
             <Cta />
+            <FlipCardCarousel />
             <Testimonial />
             <Blog />
             <Faq />

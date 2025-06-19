@@ -775,7 +775,9 @@
     section#how {
     padding-top: 4rem;
 }
-
+.testimonail_head .head_black{
+    font-size: 23px !important;
+}
     .scroll-snap-container {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
@@ -1123,7 +1125,7 @@
     }
 
     .testimonail_head {
-        padding-top: 40px;
+        padding-top: 85px;
     }
 
     .top-left-curve2 {
@@ -1141,12 +1143,11 @@
         margin-right: 0px;
     }
 
-    .testimonial_section {
-        margin-top: -6rem;
-        padding-top: 100px;
-        padding-bottom: 0px;
-    }
-
+.testimonial_section {
+    margin-top: -9rem;
+    padding-top: 129px;
+    padding-bottom: 110px;
+}
     .testimonial-card {
         padding: 0px;
     }
