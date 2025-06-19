@@ -6,19 +6,18 @@ import tabIcon2 from '../assets/images/tab_icon2.png';
 import tabIcon3 from '../assets/images/tab_icon3.png';
 
 const tabs = [
-    {
-        id: 1,
-        num: 1,
-        label: 'Home Visit & Documents',
-        para: 'Our expert visits your site and collects the details.',
-        image: tabImg1,
-        icon: tabIcon1,
-    },
 
+    {
+        id: 3,
+        label: 'Subsidy & System Activation',
+        para: 'We manage approvals and start your solar savings.',
+        image: tabImg1,
+        icon: tabIcon3,
+    },
 ];
 
-const HowItWorks = () => {
-    const [activeTab, setActiveTab] = useState(1);
+const HowItWorks3 = () => {
+    const [activeTab, setActiveTab] = useState(3);
 
     return (
         <section className='how_it_work' id='how'>
@@ -113,4 +112,4 @@ const HowItWorks = () => {
     );
 };
 
-export default HowItWorks;
+export default HowItWorks3;

@@ -773,13 +773,13 @@
     }
 
     section#how {
-    padding-top: 5rem;
+    padding-top: 4rem;
 }
 
     .scroll-snap-container {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
-        min-height: 100dvh;
+        min-height: 100vh;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
         padding-top: env(safe-area-inset-top);
@@ -788,7 +788,7 @@
 
     .scroll-snap-section {
         scroll-snap-align: start;
-        min-height: 100dvh;
+        min-height: 100vh;
     }
 
 
@@ -799,11 +799,11 @@
     }
 
     .mobile_height_calc {
-        height: 60dvh !important;
+        height: 60vh !important;
     }
 
     .faq_snap_height {
-        min-height: 50dvh !important;
+        min-height: 50vh !important;
     }
 
     .auto-height {

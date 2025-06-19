@@ -9,6 +9,8 @@ import Testimonial from "./Testimonial";
 import Blog from "./Blogs";
 import Faq from "./Faq";
 import Footer from "../components/Footer";
+import HowItWorks2 from "./How It Works2";
+import HowItWorks3 from "./How It Works3";
 
 const Allsection = () => {
     const isMobile = window.innerWidth <= 767;
@@ -69,8 +71,8 @@ const Allsection = () => {
                 <section className="scroll-snap-section"><HeroSection showSticky={showStickyButton} /></section>
                 <section className="scroll-snap-section"><WhyMierae /></section>
                 <section className="scroll-snap-section" ><HowItWorks /></section>
-                <section className="scroll-snap-section" ><HowItWorks /></section>
-                <section className="scroll-snap-section" ><HowItWorks /></section>
+                <section className="scroll-snap-section" ><HowItWorks2 /></section>
+                <section className="scroll-snap-section" ><HowItWorks3 /></section>
                 <section className="scroll-snap-section"><SolarSavingsCalculator /></section>
                 <section className="scroll-snap-section"><Cta /></section>
                 <section className="scroll-snap-section"><Testimonial /></section>
