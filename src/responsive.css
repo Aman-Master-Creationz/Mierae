@@ -772,6 +772,10 @@
         margin-bottom: 1.5rem;
     }
 
+    section#how {
+    padding-top: 6rem;
+}
+
     .scroll-snap-container {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
@@ -1034,7 +1038,7 @@
     }
 
     .tab_wrapper {
-        padding: 25px 26px 0px 26px;
+       padding: 45px 26px 30px 26px;
     }
 
     ul.solor_list {
