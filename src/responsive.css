@@ -781,7 +781,7 @@
     .scroll-snap-container {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
-        min-height: 100vh;
+        min-height: 100svh;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
         padding-top: env(safe-area-inset-top);
@@ -790,7 +790,7 @@
 
 .scroll-snap-section {
     scroll-snap-align: start;
-    height: 100vh; /* <-- This is the key change */
+    height: 100svh; /* <-- This is the key change */
     flex-shrink: 0;
 }
 
@@ -802,11 +802,11 @@
 }
 
 .mobile_height_calc {
-    height: 60vh !important; /* Consider changing to use --vh too */
+    height: 60svh !important; /* Consider changing to use --vh too */
 }
 
 .faq_snap_height {
-    min-height: 50vh !important; /* If snapping breaks, use height: auto or calc(var(--vh, 1vh) * X%) */
+    min-height: 50svh !important; /* If snapping breaks, use height: auto or calc(var(--vh, 1vh) * X%) */
 }
 
 
@@ -988,7 +988,7 @@
     }
 
     .head_black {
-        font-size: 21px !important;
+       font-size: clamp(16px, 2.1svh, 24px);
     }
 
     .accordion-button:not(.collapsed) {
@@ -1000,9 +1000,8 @@
     }
 
     .head_sub {
-        font-size: 12px;
-        text-transform: none;
-    }
+  font-size: clamp(10px, 1.2svh, 14px);
+}
 
     .head_wrapper {
         margin-bottom: 1.5rem !important;
@@ -1023,8 +1022,8 @@
 
     .card_img_mobile {
         display: block;
-        height: 100px;
-        width: 99px;
+          height: clamp(80px, 10svh, 120px);
+  width: clamp(79px, 9.9svh, 119px);
     }
 
     .together {
@@ -1033,13 +1032,13 @@
 
     .together .card_head {
         text-align: start;
-        font-size: 16px;
+        font-size: clamp(13px, 1.6svh, 18px);
         margin-top: 0px;
     }
 
     .together .card_sub {
         text-align: start;
-        font-size: 13px;
+        font-size: clamp(11px, 1.3svh, 15px);
         line-height: 1.4em;
     }
 
