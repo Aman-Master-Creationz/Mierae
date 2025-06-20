@@ -773,23 +773,39 @@
     }
 
     section#how {
-    padding-top: 1rem;
-}
+        padding-top: 1rem;
+    }
 
 
-.fullscreen-result {
-  height: 100vh;
-  scroll-snap-align: start;
-  display: flex;
-  align-items: center;
-  background-color: #f7f7f7;
-  padding: 2rem 0;
-}
 
 
-.testimonail_head .head_black{
-    font-size: 23px !important;
-}
+    .results-wrapper.show {
+        height: 100vh;
+        scroll-snap-align: start;
+        display: flex;
+        align-items: start;
+        padding-top: 4rem !important;
+    }
+
+    .results-wrapper .row {
+        width: 100%;
+    }
+
+    .results-wrapper .details {
+        margin: 0 auto;
+    }
+
+    .details {
+        row-gap: 14px;
+    }
+
+
+
+
+
+    .testimonail_head .head_black {
+        font-size: 23px !important;
+    }
 
     .scroll-snap-container {
         scroll-snap-type: y mandatory;
@@ -801,40 +817,46 @@
         padding-bottom: env(safe-area-inset-bottom);
     }
 
-.scroll-snap-section {
-    scroll-snap-align: start;
-    min-height: 100vh;
-    flex-shrink: 0;
-}
+    .scroll-snap-section {
+        scroll-snap-align: start;
+        min-height: 100vh;
+        flex-shrink: 0;
+    }
 
 
 
     .scroll_footer {
-    height: auto !important; /* keep */
-    min-height: auto !important;
-}
+        height: auto !important;
+        /* keep */
+        min-height: auto !important;
+    }
 
-.mobile_height_calc {
-    height: 60vh !important; /* Consider changing to use --vh too */
-}
+    .mobile_height_calc {
+        height: 60vh !important;
+        /* Consider changing to use --vh too */
+    }
 
-.faq_snap_height {
-    min-height: 50vh !important; /* If snapping breaks, use height: auto or calc(var(--vh, 1vh) * X%) */
-}
+    .faq_snap_height {
+        min-height: 50vh !important;
+        /* If snapping breaks, use height: auto or calc(var(--vh, 1vh) * X%) */
+    }
 
 
+    .solar_head {
+        font-size: 28px !important;
+    }
 
-   .auto-height {
-    height: auto !important;
-    min-height: auto !important;
-}
+    .auto-height {
+        height: auto !important;
+        min-height: auto !important;
+    }
 
     .scroll-snap-container::-webkit-scrollbar {
         display: none;
     }
 
     .para_common {
-        font-size: 12px;
+        font-size: 14px;
     }
 
 
@@ -860,9 +882,10 @@
 
 
     .calculator {
-        padding-top: 20px;
+        padding-top: 50px;
         padding-bottom: 50px;
     }
+
 
     .cta_section {
         padding-top: 30px;
@@ -948,24 +971,26 @@
 
     .button_wrap.sticky_show {
         position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
+        bottom: 10px;
+        left: 2.7%;
         border-radius: 50px;
-        width: 73%;
+        width: 95%;
     }
-
-
 
     .item-center {
         justify-content: center;
     }
 
+    .padding_mobile .orange_button{
+            background: #219653 !important;
+    }
+
     .navbar_button {
         background: linear-gradient(90deg, #F19A3E 0%, #FFB05C 100%);
         gap: 18px !important;
-        padding: 10px 12px 10px 19px !important;
+        padding: 10px 14px 10px 20px !important;
         border-radius: 12px !important;
+        justify-content: space-between;
     }
 
     span.nav_text1 {
@@ -1001,7 +1026,11 @@
     }
 
     .head_black {
-        font-size: 21px !important;
+        font-size: 21px;
+    }
+
+    .faq_head {
+        font-size: 29px !important;
     }
 
     .accordion-button:not(.collapsed) {
@@ -1057,7 +1086,7 @@
     }
 
     .tab_wrapper {
-       padding: 30px 26px 30px 26px;
+        padding: 30px 26px 30px 26px;
     }
 
     ul.solor_list {
@@ -1070,7 +1099,7 @@
     }
 
     .footer_section {
-        padding: 50px 5px 160px 5px;
+        padding: 50px 5px 120px 5px;
     }
 
     .form-control {
@@ -1087,7 +1116,7 @@
     }
 
     .solar_card {
-        padding: 18px 16px !important;
+        padding: 26px 16px !important;
         border-radius: 14px !important;
     }
 
@@ -1096,11 +1125,11 @@
     }
 
     .solar_card_head {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .solar_card_sub {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     p.cta_sub {
@@ -1160,12 +1189,13 @@
         margin-right: 0px;
     }
 
-.testimonial_section {
-    margin-top: -7rem;
-    padding-top: 104px;
-    padding-bottom: 55px;
-    border-radius: 20px;
-}
+    .testimonial_section {
+        margin-top: -7rem;
+        padding-top: 104px;
+        padding-bottom: 55px;
+        border-radius: 20px;
+    }
+
     .testimonial-card {
         padding: 0px;
     }
@@ -1203,7 +1233,7 @@
     }
 
     .faq_section {
-        padding-top: 67px;
+        padding-top: 55px;
     }
 
     .footer_cta .badge_banner {
@@ -1211,15 +1241,15 @@
         font-size: 14px !important;
     }
 
-.footer_cta_head {
-    font-size: 36px;
-    line-height: 1.4em;
-    width: 100%;
-}
+    .footer_cta_head {
+        font-size: 36px;
+        line-height: 1.4em;
+        width: 100%;
+    }
 
-.mobile_footer_section {
-    padding-top: 2rem;
-}
+    .mobile_footer_section {
+        padding-top: 2rem;
+    }
 
     .white_button {
         padding: 21px !important;
@@ -1365,4 +1395,3 @@
     background-color: #F19A3E !important;
   }
 } */
-
