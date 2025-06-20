@@ -49,7 +49,7 @@ const FlipCardCarousel = () => {
 
       if (swiperRef.current?.autoplay) {
         newIndex !== null ? swiperRef.current.autoplay.stop() : swiperRef.current.autoplay.start();
-      }
+      } 
     }
   };
 
@@ -93,6 +93,9 @@ const FlipCardCarousel = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+
+
     </div>
   );
 };

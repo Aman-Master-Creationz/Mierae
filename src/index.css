@@ -1003,6 +1003,7 @@ img.right_blog_image {
     background-color: #e3f2e9;
     margin-top: -3rem;
     padding-bottom: 80px;
+    position: relative;
 }
 
 .testimonial {

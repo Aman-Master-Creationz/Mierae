@@ -101,6 +101,11 @@ const Testimonial = () => {
 
                 <div className="container d-block d-md-none">
                     <div className="row">
+                              <div className="top-left-curve2">
+                            <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                <path d="M0,0 C40,0 40,80 80,80 C120,80 120,0 160,0 L160,80 L0,80 Z" fill="#e3f2e9" />
+                            </svg>
+                        </div>
                         <FlipCardCarousel />
                     </div>
                 </div>
