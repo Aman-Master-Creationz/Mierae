@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import HeroSection from './Sections/Hero';
 import LogoCarousel from './Sections/Logocrousal';
 import WhyMierae from './Sections/Why Mierae';
-import HowItWorks from './Sections/How It Works';
 import SolarSavingsCalculator from './Sections/Calculator';
 import Cta from './Sections/Cta';
 import Blog from './Sections/Blogs';

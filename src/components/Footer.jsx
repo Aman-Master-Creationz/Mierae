@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-12">
 
-                        <div className="footer_cta">
+                        <div className="footer_cta d-none d-md-block">
                             <div className="badge_banner">
                                 Ready to Power Your Roof with Solar?
                             </div>

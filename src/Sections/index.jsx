@@ -2,17 +2,14 @@ import { useRef, useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import HeroSection from "./Hero";
 import WhyMierae from "./Why Mierae";
-import HowItWorks from "./How It Works";
 import SolarSavingsCalculator from "./Calculator";
 import Cta from "./Cta";
 import Testimonial from "./Testimonial";
 import Blog from "./Blogs";
 import Faq from "./Faq";
 import Footer from "../components/Footer";
-import HowItWorks2 from "./How It Works2";
-import HowItWorks3 from "./How It Works3";
 import HowItWorksPc from "./How It Works Pc";
-import FlipCardCarousel from "./FlipCardCarousel";
+import Mobilefooter from "./Mobilefooter";
 
 const Allsection = () => {
     const isMobile = window.innerWidth <= 767;
@@ -72,13 +69,12 @@ const Allsection = () => {
                 </div>
                 <section className="scroll-snap-section"><HeroSection showSticky={showStickyButton} /></section>
                 <section className="scroll-snap-section"><WhyMierae /></section>
-                <section className="scroll-snap-section" ><HowItWorks /></section>
-                <section className="scroll-snap-section" ><HowItWorks2 /></section>
-                <section className="scroll-snap-section" ><HowItWorks3 /></section>
+                <section className="scroll-snap-section" ><HowItWorksPc /></section>
                 <section className="scroll-snap-section"><SolarSavingsCalculator /></section>
                 <section className="scroll-snap-section"><Cta /></section>
                 <section className="scroll-snap-section"><Testimonial /></section>
-                <section className="scroll-snap-section faq_snap_height"><Faq /></section>
+                <section className="scroll-snap-section"><Faq /></section>
+                <section className="scroll-snap-section"><Mobilefooter /></section>
                 <section className="scroll-snap-section scroll_footer"><Footer /></section>
             </div>
         </>

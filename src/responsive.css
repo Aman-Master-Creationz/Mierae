@@ -773,11 +773,24 @@
     }
 
     section#how {
-    padding-top: 4rem;
+    padding-top: 1rem;
 }
+
+
+.fullscreen-result {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 2rem 0;
+}
+
+
 .testimonail_head .head_black{
     font-size: 23px !important;
 }
+
     .scroll-snap-container {
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
@@ -1044,7 +1057,7 @@
     }
 
     .tab_wrapper {
-       padding: 45px 26px 30px 26px;
+       padding: 30px 26px 30px 26px;
     }
 
     ul.solor_list {
@@ -1057,7 +1070,7 @@
     }
 
     .footer_section {
-        padding: 445px 5px 160px 5px;
+        padding: 50px 5px 160px 5px;
     }
 
     .form-control {
@@ -1198,11 +1211,15 @@
         font-size: 14px !important;
     }
 
-    .footer_cta_head {
-        font-size: 25px;
-        line-height: 44px;
-        width: 100%;
-    }
+.footer_cta_head {
+    font-size: 36px;
+    line-height: 1.4em;
+    width: 100%;
+}
+
+.mobile_footer_section {
+    padding-top: 2rem;
+}
 
     .white_button {
         padding: 21px !important;
@@ -1212,7 +1229,7 @@
     .footer_cta {
         gap: 34px;
         padding: 50px 20px 120px 20px;
-        margin-top: -29rem;
+        margin-top: 0rem;
     }
 
     .footer-mob {
@@ -1307,7 +1324,7 @@
     }
 
     .tab_content_wrapper img {
-        width: 90%;
+        width: 65%;
     }
 
     .testimonial-card button span {
