@@ -12,4 +12,19 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+
+  <script>
+  function updateDynamicSizing() {
+    const screenHeight = window.innerHeight;
+    document.documentElement.style.setProperty('--vh', `${screenHeight / 100}px`);
+  }
+
+  // Run once on load
+  updateDynamicSizing();
+
+  // Re-run on resize or orientation change
+  window.addEventListener('resize', updateDynamicSizing);
+  window.addEventListener('orientationchange', updateDynamicSizing);
+</script>
+
 </html>

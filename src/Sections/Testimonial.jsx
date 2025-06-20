@@ -33,7 +33,8 @@ const testimonials = [
 const Testimonial = () => {
     return (
         <>
-            <section className='testimonail_head'>
+        <section className='testimonial_section_wrapper'>
+            <div className='testimonail_head'>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
@@ -44,9 +45,9 @@ const Testimonial = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section className="testimonial_section">
+            <div className="testimonial_section">
                 <div className="container d-none d-md-block">
                     <div className="row position-relative">
                         <div className="top-left-curve2">
@@ -103,7 +104,9 @@ const Testimonial = () => {
                         <FlipCardCarousel />
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+            
         </>
     );
 };
