@@ -11,7 +11,7 @@ import Cta from '../assets/images/footer_cta.png';
 
 const Footer = () => {
     return (
-        <section className="footer_section">
+        <section className="footer_section" id='footer'>
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">

@@ -23,7 +23,10 @@ const faqData = [
         question: "What warranty do I get with the system?",
         answer: "You get a 10-year product warranty, 25-year energy output guarantee, and 5 years of free maintenance.",
     },
-   
+   {
+        question: "Is financing or EMI available for the solar system?",
+        answer: "Yes, Mierae offers easy financing options with zero down payment and zero processing fees to make your switch to solar hassle-free.",
+    },
 ];
 
 const Faq = () => {

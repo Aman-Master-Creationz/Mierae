@@ -69,7 +69,7 @@ const Navbar = () => {
                   <a className={`nav-link ${activeSection === 'calculator1' ? 'active fw-bold' : 'text-secondary'}`} href="#calculator1">Calculator</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link ${activeSection === 'contact' ? 'active fw-bold' : 'text-secondary'}`} href="#contact">Contact Us</a>
+                  <a className={`nav-link ${activeSection === 'contact' ? 'active fw-bold' : 'text-secondary'}`} href="#footer">Contact Us</a>
                 </li>
               </ul>
             </div>
