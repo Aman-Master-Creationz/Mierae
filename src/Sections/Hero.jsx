@@ -40,6 +40,9 @@ const HeroSection = () => {
   const isHeroInView = useInView(heroRef, { threshold: 0.5 });
   const [makeSticky, setMakeSticky] = useState(false);
 
+const message = encodeURIComponent("Hello Mierae Team, I'm interested in solar subsidy.");
+const phone = "919070607050";
+
   useEffect(() => {
     setMakeSticky(!isHeroInView);
   }, [isHeroInView]);
@@ -70,7 +73,7 @@ const HeroSection = () => {
 
               <motion.div className="d-flex gap-3 mt-3 mt-lg-4" variants={fadeUp}>
                 <div className={`button_wrap ${makeSticky ? "sticky_show" : ""}`}>
-                  <a href="#calculator1" className="btn navbar_button d-flex align-items-center">
+                  <a  href={`https://wa.me/${phone}?text=${message}`} target="_blank" rel="noopener noreferrer" className="btn navbar_button d-flex align-items-center">
                     <span className="me-2 nav_text1">Check Eligibility</span>
                     <span className="bg-white fw-bold rounded small nav_text2">IT’S FREE</span>
                   </a>

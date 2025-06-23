@@ -9,6 +9,12 @@ import Youtube from '../assets/images/youtube.svg';
 import Mirae from '../assets/images/mierae_footer.svg';
 import Cta from '../assets/images/footer_cta.png';
 
+import Footer1 from '../assets/images/footericon1.png';
+import Footer2 from '../assets/images/footericon2.png';
+import Footer3 from '../assets/images/footericon3.png';
+
+import Star from '../assets/images/stars.png';
+
 const Footer = () => {
     return (
         <section className="footer_section" id='footer'>
@@ -17,13 +23,50 @@ const Footer = () => {
                     <div className="col-md-12">
 
                         <div className="footer_cta d-none d-md-block">
-                            <div className="badge_banner">
-                                Ready to Power Your Roof with Solar?
+                            <div className="row">
+                                <div className="col-md-7">
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <p className='footer_cta_head'>Your</p>
+                                            <div className="heading_wrapper">
+                                                <h2 className="footer_cta_head1">Solar Plan</h2>
+                                                <img src={Star} alt="Icon" className="corner_icon" />
+                                            </div>
+                                            <p className='footer_cta_head text-end'>is Ready</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="row">
+                                        <div className="col-12">
+                                            <div className="footer_cta_content d-flex">
+                                                <div className="footer_cta_inner">
+                                                    <img src={Footer1} alt="cta" />
+                                                    <p>Book a free home inspection today</p>
+                                                </div>
+
+                                                <div className="footer_cta_inner">
+                                                    <img src={Footer2} alt="cta" />
+                                                    <p>Compare EMI vs full payment options</p>
+                                                </div>
+
+                                                <div className="footer_cta_inner">
+                                                    <img src={Footer3} alt="cta" />
+                                                    <p>Fast-track your subsidy & installation</p>
+                                                </div>
+                                            </div>
+
+                                            <button className="btn orange_button green_button">
+                                                Book Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-md-5 align-self-end">
+                                    <img src={Cta} alt="cta" className="cta_img" />
+                                </div>
                             </div>
-                            <p className='footer_cta_head'>We take care of everything — from cost estimate to installation and subsidy claims.</p>
-                            <button className="btn white_button">
-                                Get My Estimate
-                            </button>
+
                         </div>
 
 
@@ -51,13 +94,13 @@ const Footer = () => {
                                     <p className='footer_head'>Get in Touch</p>
                                     <div className='d-flex gap-3'>
                                         <a href="#" target="_blank" rel="noopener noreferrer"><img src={Insta} alt='insta' /> </a>
-                                    
-                                    <a href="#" target="_blank" rel="noopener noreferrer"><img src={Fb} /></a>
-                                    
-                                    <a href="https://www.linkedin.com/company/mierae-solar/" target="_blank" rel="noopener noreferrer">
-                                    <img src={Link} alt='insta' />
-                                    </a>
-                                    <img src={Youtube} /> </div>
+
+                                        <a href="#" target="_blank" rel="noopener noreferrer"><img src={Fb} /></a>
+
+                                        <a href="https://www.linkedin.com/company/mierae-solar/" target="_blank" rel="noopener noreferrer">
+                                            <img src={Link} alt='insta' />
+                                        </a>
+                                        <img src={Youtube} /> </div>
                                 </div>
 
                             </div>

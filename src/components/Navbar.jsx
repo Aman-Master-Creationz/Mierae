@@ -6,6 +6,9 @@ import mobileimage from '../assets/images/mobileimg.svg';
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
 
+  const message = encodeURIComponent("Hello Mierae Team, I'm interested in solar subsidy.");
+const phone = "919070607050";
+
   useEffect(() => {
     const sectionIds = ['home', 'why', 'how', 'calculator1', 'contact'];
 
@@ -75,7 +78,7 @@ const Navbar = () => {
             </div>
 
             <div className="d-none d-lg-block">
-              <a href="#calculator1" className="btn navbar_button d-flex align-items-center">
+              <a href={`https://wa.me/${phone}?text=${message}`} target="_blank" rel="noopener noreferrer" className="btn navbar_button d-flex align-items-center">
                 <span className="me-2 nav_text1">Check Eligibility</span>
                 <span className="bg-white fw-bold rounded small nav_text2">IT’S FREE</span>
               </a>

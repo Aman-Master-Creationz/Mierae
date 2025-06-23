@@ -3,7 +3,7 @@ body {
     font-style: normal;
     text-transform: capitalize;
     overflow-x: hidden !important;
-     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
@@ -11,19 +11,20 @@ body {
 #how,
 #calculator1,
 #contact {
-  scroll-margin-top: 80px; /* Match or slightly more than your sticky navbar height */
+    scroll-margin-top: 80px;
+    /* Match or slightly more than your sticky navbar height */
 }
 
 
-.button_wrap{
+.button_wrap {
     display: none;
 }
- 
-.card_img_mobile{
+
+.card_img_mobile {
     display: none;
 }
- 
-.cta-img-mobile{
+
+.cta-img-mobile {
     display: none;
 }
 
@@ -136,21 +137,21 @@ nav.navbar.navbar-expand-md {
     top: 0;
     background-color: white;
     z-index: 99;
-    
+
     transition: transform 0.3s ease-in-out;
-  will-change: transform;
+    will-change: transform;
 }
 
 
 
 /* Hidden state (scroll down) */
 .sticky-navbar.hide {
-  transform: translateY(-100%);
+    transform: translateY(-100%);
 }
 
 /* Shown state (scroll up) */
 .sticky-navbar.show {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 
 
@@ -162,14 +163,15 @@ nav.navbar.navbar-expand-md {
     border-radius: 20px;
 }
 
- .mirae_logo_desktop{
+.mirae_logo_desktop {
     display: block;
 }
 
-.mirae_logo_mobile{
+.mirae_logo_mobile {
     display: none;
 }
-.mobile_nav_image{
+
+.mobile_nav_image {
     display: none;
 }
 
@@ -220,7 +222,8 @@ span.nav_text2 {
 .nav_cont {
     padding: 0px !important;
 }
-.navbar-nav{
+
+.navbar-nav {
     gap: 1.5rem;
 }
 
@@ -420,7 +423,7 @@ span.nav_text2 {
     margin-bottom: 2rem;
 }
 
-.marg{
+.marg {
     margin-bottom: 2rem;
 }
 
@@ -501,7 +504,7 @@ span.nav_text2 {
 }
 
 .tab_wrapper {
-        padding: 90px 50px 50px 50px;
+    padding: 90px 50px 50px 50px;
     border-radius: 37.088px;
     background: rgba(33, 150, 83, 0.05);
 }
@@ -956,6 +959,99 @@ img.right_blog_image {
 }
 
 .footer_cta {
+    background-image: url('/src/assets/images/final_cta.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    padding: 30px 50px 0px 50px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 4rem;
+    margin-top: -12rem;
+}
+
+.footer_cta_head {
+
+    color: #3F3F3F;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+
+.footer_cta_head1 {
+    color: #219653;
+    font-family: Poppins;
+    font-size: 106.228px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 0.7em;
+    text-transform: capitalize;
+      position: relative;
+  z-index: 1;
+
+}
+
+.heading_wrapper {
+  position: relative;
+  display: inline-block; /* adjust as needed */
+}
+
+
+.corner_icon {
+    position: absolute;
+    top: -2.5rem;
+    right: -3.5rem;
+    width: 8rem;
+    height: auto;
+    z-index: 2;
+}
+
+
+.footer_cta_inner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer_cta_inner p {
+    color: #2F2F2F;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.footer_cta_content {
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.green_button {
+    border-radius: 10px !important;
+    background: #219653 !important;
+    color: #FFF !important;
+    padding: 20px !important;
+    text-align: center !important;
+    font-family: "DM Sans" !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 12.472px !important;
+
+    margin-top: 30px;
+    width: 25%;
+
+}
+
+/* .footer_cta {
     background-image: url('/src/assets/images/footer_cta.png');
     background-size: cover;
     background-position: center center;
@@ -971,18 +1067,7 @@ img.right_blog_image {
 
 }
 
-.footer_cta_head {
 
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 31.102px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 38.211px;
-    text-transform: capitalize;
-    width: 56%;
-
-}
 
 .footer_cta .badge_banner {
     width: 32%;
@@ -994,7 +1079,7 @@ img.right_blog_image {
     border-radius: 10px !important;
     text-align: center;
 
-}
+} */
 
 
 /* ==================================== testimonial ============================= */
@@ -1086,7 +1171,8 @@ img.right_blog_image {
     margin-left: 35px;
     margin-right: 35px;
 }
-.test_slider .swiper{
+
+.test_slider .swiper {
     padding-top: 5rem !important;
 
 }
@@ -1129,10 +1215,12 @@ img.right_blog_image {
     overflow: visible;
     /* Not hidden */
 }
-.crousal{
+
+.crousal {
     margin-bottom: 9rem;
 }
-.why_mierae{
+
+.why_mierae {
     padding-top: 0px !important;
 }
 
@@ -1156,30 +1244,33 @@ img.right_blog_image {
 
 
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
     width: 50px !important;
     height: 50px !important;
     top: 62% !important;
 }
 
 .swiper-button-prev::after {
-  content: '' !important;
-  background-image: url('/src/assets/images/leftarrow.svg'); /* ✅ your image */
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
-  display: inline-block;
+    content: '' !important;
+    background-image: url('/src/assets/images/leftarrow.svg');
+    /* ✅ your image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
 }
 
-.swiper-button-next:after{
+.swiper-button-next:after {
     content: '' !important;
-  background-image: url('/src/assets/images/rightarrow.svg'); /* ✅ your image */
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
-  display: inline-block;
+    background-image: url('/src/assets/images/rightarrow.svg');
+    /* ✅ your image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
 }
 
 .swiper-pagination-bullet-active {
@@ -1190,8 +1281,8 @@ img.right_blog_image {
 
 
 
-.flip-carousel-wrapper .swiper{
-padding-bottom: 3rem !important;
+.flip-carousel-wrapper .swiper {
+    padding-bottom: 3rem !important;
 }
 
 .flip-carousel-wrapper .swiper-pagination {
@@ -1201,69 +1292,68 @@ padding-bottom: 3rem !important;
 
 
 .flip-card {
-  perspective: 1000px;
-  height: 300px;
-  cursor: pointer;
+    perspective: 1000px;
+    height: 300px;
+    cursor: pointer;
 }
 
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
 }
 
 .flip-card-front,
 .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 12px;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .flip-card-front img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .flip-card-front .info {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 
 .flip-card-back {
-  transform: rotateY(180deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  text-align: center;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Flip on hover for desktop */
 @media (hover: hover) {
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
 }
 
 /* Dots style */
 .swiper-pagination-bullet {
-  background: #ccc;
-  opacity: 1;
+    background: #ccc;
+    opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background: #28a745;
+    background: #28a745;
 }
-

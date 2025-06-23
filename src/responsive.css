@@ -139,9 +139,20 @@
     }
 
     .footer_cta_head {
-        font-size: 26px;
+        font-size: 40px;
     }
 
+    .footer_cta_head1 {
+    font-size: 90px;
+}
+.footer_cta_inner img {
+    width: 39%;
+    height: 69%;
+}
+
+.footer_cta_inner p {
+    font-size: 12px;
+}
     /* ========================== Footer ========================== */
 
     .footer_sub {
@@ -440,13 +451,32 @@
     }
 
     .footer_cta_head {
-        font-size: 28px;
-        width: 62%;
+        font-size: 34px;
     }
 
-    .footer_cta .badge_banner {
-        width: 43%;
-    }
+    .footer_cta_head1 {
+    font-size: 70px;
+}
+
+.footer_cta_inner img {
+    width: 30%;
+    height: 56%;
+}
+
+.footer_cta_inner {
+    gap: 5px;
+}
+.footer_cta_inner p{
+    font-size: 12px;
+}
+.green_button{
+    margin-bottom: 30px;
+    margin-top: 1rem;
+}
+
+.footer_cta {
+    padding: 30px 30px 0px 30px;
+}
 
     .policy_wrapper p {
         padding-right: 13px;
@@ -723,10 +753,34 @@
 
     /* ========================== Footer CTA ========================== */
 
-    .footer_cta .badge_banner {
-        width: 62%;
+    .footer_cta_head1 {
+    font-size: 52px;
 
-    }
+}
+
+.footer_cta_content {
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.footer_cta_inner img {
+    width: 15%;
+}
+
+.footer_cta_inner p {
+    font-size: 14px;
+}
+
+.green_button {
+    width: 58%;
+    margin-bottom: 30px;
+}
+
+.corner_icon {
+    top: -2.3rem;
+    right: -2.78rem;
+    width: 6rem;
+}
 
     .footer_cta_head {
         font-size: 28px;
@@ -1129,6 +1183,51 @@
         padding-top: 22px;
     }
 
+
+
+
+    .footer_cta_head1 {
+    font-size: 59px;
+}
+
+.corner_icon {
+    top: -1.5rem;
+    right: -1.6rem;
+    width: 4rem;
+}
+
+.footer_cta_content {
+    flex-wrap: wrap;
+        gap: 20px;
+}
+
+.footer_cta_inner img {
+    width: 16%;
+}
+
+.footer_cta_inner p {
+    font-size: 15px;
+}
+.green_button {
+    width: 59%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .footer_section {
         padding: 50px 5px 120px 5px;
     }
@@ -1282,7 +1381,7 @@
     }
 
     .footer_cta_head {
-        font-size: 36px;
+        font-size: 30px;
         line-height: 1.4em;
         width: 100%;
     }
@@ -1297,10 +1396,16 @@
     }
 
     .footer_cta {
+        background-image: url(/src/assets/images/final_cta_mobile.png);
         gap: 34px;
-        padding: 50px 20px 120px 20px;
+        padding: 10px 20px 0px 20px;
         margin-top: 0rem;
     }
+
+    .cta_img {
+    width: 100%;
+    margin-top: 1rem;
+}
 
     .footer-mob {
         display: none;
