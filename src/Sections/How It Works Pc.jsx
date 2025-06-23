@@ -27,7 +27,7 @@ const tabs = [
         id: 3,
         label: 'Subsidy & System Activation',
         para: 'We manage approvals and start your solar savings.',
-        image: tabImg3g,
+        image: tabImg3,
         icon: tabIcon3,
     },
 
