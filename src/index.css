@@ -598,6 +598,7 @@ span.nav_text2 {
     border-radius: 37.088px;
     background-repeat: no-repeat;
     background-position: center center;
+    padding: 60px 25px;
 }
 
 .cta_img {
@@ -607,10 +608,11 @@ span.nav_text2 {
 p.cta_head {
     color: #FFF;
     font-family: Poppins;
-    font-size: 49.554px;
+    font-size: 45px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 1.3em
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: capitalize;
 }
 
 p.cta_sub {
@@ -639,10 +641,14 @@ p.cta_para {
 .cta_content_wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 35px;
     height: 100%;
     justify-content: center;
-    padding: 50px;
+    padding: 0px 0px 50px 30px;
+}
+
+.zero_image{
+    display: none;
 }
 
 .cta_button {
@@ -992,14 +998,15 @@ img.right_blog_image {
     font-weight: 900;
     line-height: 0.7em;
     text-transform: capitalize;
-      position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 
 }
 
 .heading_wrapper {
-  position: relative;
-  display: inline-block; /* adjust as needed */
+    position: relative;
+    display: inline-block;
+    /* adjust as needed */
 }
 
 
@@ -1356,4 +1363,147 @@ img.right_blog_image {
 
 .swiper-pagination-bullet-active {
     background: #28a745;
+}
+
+
+
+
+/* ===================================================================== modal css =========================================================== */
+
+
+.modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 1rem;
+}
+
+.modal_box {
+    background: #ffffff;
+    color: #333;
+    border-radius: 16px;
+    max-width: 70%;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    animation: slideUpFade 0.3s ease-out;
+    min-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes slideUpFade {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal_title {
+    font-size: 1.8rem;
+    color: #ff6500;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.modal_body {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.modal_body h4 {
+    margin-top: 1rem;
+}
+
+.modal_close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal_close:hover {
+    color: #ff6500;
+}
+
+.link_btn {
+    background: none;
+    border: none;
+    color: #ff6500;
+    text-decoration: underline;
+    cursor: pointer;
+    /* 👈 shows hand symbol */
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.zero {
+  position: relative;
+}
+
+.zero_word {
+  position: relative;
+  display: inline-block;
+}
+
+.zero_underline {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+}
+
+
+.cta_icon_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.cta_icon_item {
+  display: flex;
+  align-items: center;
+  flex: 1 1 100px;
+  text-align: left;
+  gap: 10px;
+}
+
+.cta_icon_item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.cta_icon_item span {
+  font-size: 12px;
+  color: #000;
+  font-weight: 500;
 }

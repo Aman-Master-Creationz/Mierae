@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Logo from '../assets/images/footer_logo.svg';
 import location from '../assets/images/location_white.svg';
 import Phone from '../assets/images/phone.svg';
@@ -15,7 +16,25 @@ import Footer3 from '../assets/images/footericon3.png';
 
 import Star from '../assets/images/stars.png';
 
+
+import PopupModal from '../components/PopupModal';
+import footerContent from "../constants/footerContent";
+
 const Footer = () => {
+
+    const [modalKey, setModalKey] = useState(null); // ✅ This is required
+
+    const handleOpen = (key) => {
+        setModalKey(key);
+    };
+
+    const handleClose = () => {
+        setModalKey(null);
+    };
+
+    const message = encodeURIComponent("Hello Mierae Team, I'm interested in solar subsidy.");
+    const phone = "919070607050";
+
     return (
         <section className="footer_section" id='footer'>
             <div className="container">
@@ -55,9 +74,10 @@ const Footer = () => {
                                                 </div>
                                             </div>
 
-                                            <button className="btn orange_button green_button">
-                                                Book Now
-                                            </button>
+                                            <a href={`https://wa.me/${phone}?text=${message}`} target="_blank" rel="noopener noreferrer">
+                                                <button className="btn orange_button green_button">
+                                                    Book Now
+                                                </button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -113,10 +133,10 @@ const Footer = () => {
 
                                     <div className="policy_wrapper">
 
-                                        <p>Terms OF Service</p>
-                                        <p>Privacy Policy</p>
-                                        <p>Cancel & Refund Policy</p>
-                                        <p>Accessibility Policy</p>
+                                        <p className="link_btn" onClick={() => handleOpen("terms")}>Terms OF Service</p>
+                                        <p className="link_btn" onClick={() => handleOpen("privacy")}>Privacy Policy</p>
+                                        <p className="link_btn" onClick={() => handleOpen("refund")}>Cancel & Refund Policy</p>
+                                        <p className="link_btn" onClick={() => handleOpen("accessibility")}>Accessibility Policy</p>
                                     </div>
                                 </div>
                             </div>
@@ -126,6 +146,15 @@ const Footer = () => {
                             </div>
 
                         </div>
+
+
+                        {modalKey && (
+                            <PopupModal
+                                title={footerContent[modalKey].title}
+                                content={footerContent[modalKey].content}
+                                onClose={handleClose}
+                            />
+                        )}
                     </div>
                 </div>
             </div>

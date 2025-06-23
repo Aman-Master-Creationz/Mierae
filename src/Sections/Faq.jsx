@@ -23,7 +23,7 @@ const faqData = [
         question: "What warranty do I get with the system?",
         answer: "You get a 10-year product warranty, 25-year energy output guarantee, and 5 years of free maintenance.",
     },
-   {
+    {
         question: "Is financing or EMI available for the solar system?",
         answer: "Yes, Mierae offers easy financing options with zero down payment and zero processing fees to make your switch to solar hassle-free.",
     },
@@ -54,10 +54,12 @@ const Faq = () => {
                                 <p className="faq_contact_sub">
                                     dont worry were free for consultation, just click button below.
                                 </p>
+                                <a href="#footer">
+                                    <button className="btn white_button">
+                                        Contact Us
+                                    </button>
+                                </a>
 
-                                <button className="btn white_button">
-                                    Contact Us
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -82,9 +84,7 @@ const Faq = () => {
                                                 onClick={() => toggleIndex(index)}
                                             >
                                                 {faq.question}
-                                                {/* <span className="ms-auto fw-bold">
-                                                    {isActive ? "−" : "+"}
-                                                </span> */}
+
                                             </button>
                                         </h2>
                                         <div

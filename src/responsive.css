@@ -1,5 +1,15 @@
 @media (min-width: 1200px) and (max-width: 1399px) {
 
+
+    .cta_content_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        height: 100%;
+        justify-content: center;
+        padding: 22px 15px 30px;
+    }
+
     .navbar_button {
         padding: 15px 19px !important;
     }
@@ -143,16 +153,18 @@
     }
 
     .footer_cta_head1 {
-    font-size: 90px;
-}
-.footer_cta_inner img {
-    width: 39%;
-    height: 69%;
-}
+        font-size: 90px;
+    }
 
-.footer_cta_inner p {
-    font-size: 12px;
-}
+    .footer_cta_inner img {
+        width: 39%;
+        height: 69%;
+    }
+
+    .footer_cta_inner p {
+        font-size: 12px;
+    }
+
     /* ========================== Footer ========================== */
 
     .footer_sub {
@@ -172,6 +184,11 @@
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
+    .cta_content_wrapper {
+        gap: 12px;
+        padding: 14px 0px;
+    }
 
     .head_black::before {
         font-size: 67px;
@@ -337,7 +354,6 @@
 
     .cta_content_wrapper {
         gap: 12px;
-        padding: 40px 45px;
     }
 
     .cta_button {
@@ -455,28 +471,30 @@
     }
 
     .footer_cta_head1 {
-    font-size: 70px;
-}
+        font-size: 70px;
+    }
 
-.footer_cta_inner img {
-    width: 30%;
-    height: 56%;
-}
+    .footer_cta_inner img {
+        width: 30%;
+        height: 56%;
+    }
 
-.footer_cta_inner {
-    gap: 5px;
-}
-.footer_cta_inner p{
-    font-size: 12px;
-}
-.green_button{
-    margin-bottom: 30px;
-    margin-top: 1rem;
-}
+    .footer_cta_inner {
+        gap: 5px;
+    }
 
-.footer_cta {
-    padding: 30px 30px 0px 30px;
-}
+    .footer_cta_inner p {
+        font-size: 12px;
+    }
+
+    .green_button {
+        margin-bottom: 30px;
+        margin-top: 1rem;
+    }
+
+    .footer_cta {
+        padding: 30px 30px 0px 30px;
+    }
 
     .policy_wrapper p {
         padding-right: 13px;
@@ -498,6 +516,20 @@
     .head_black::before {
         font-size: 50px;
         bottom: 68% !important;
+    }
+
+    .zero_image {
+        display: block;
+        width: 76%;
+    }
+
+    .cta_wrapper {
+        background-image: url('/src/assets/images/zero_mobile.png');
+        background-size: cover;
+        border-radius: 37.088px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 10px 25px;
     }
 
     .crousal {
@@ -677,7 +709,7 @@
 
     .cta_content_wrapper {
         padding: 33px;
-        gap: 12px;
+        gap: 35px;
     }
 
     /* ========================== Testimonial ========================== */
@@ -754,33 +786,33 @@
     /* ========================== Footer CTA ========================== */
 
     .footer_cta_head1 {
-    font-size: 52px;
+        font-size: 52px;
 
-}
+    }
 
-.footer_cta_content {
-    margin-top: 10px;
-    flex-wrap: wrap;
-}
+    .footer_cta_content {
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
 
-.footer_cta_inner img {
-    width: 15%;
-}
+    .footer_cta_inner img {
+        width: 15%;
+    }
 
-.footer_cta_inner p {
-    font-size: 14px;
-}
+    .footer_cta_inner p {
+        font-size: 14px;
+    }
 
-.green_button {
-    width: 58%;
-    margin-bottom: 30px;
-}
+    .green_button {
+        width: 58%;
+        margin-bottom: 30px;
+    }
 
-.corner_icon {
-    top: -2.3rem;
-    right: -2.78rem;
-    width: 6rem;
-}
+    .corner_icon {
+        top: -2.3rem;
+        right: -2.78rem;
+        width: 6rem;
+    }
 
     .footer_cta_head {
         font-size: 28px;
@@ -816,6 +848,12 @@
     body {
         margin: 0px 10px 0px 10px !important;
         scroll-behavior: smooth;
+    }
+
+
+    .zero_image {
+        display: block;
+        width: 93%;
     }
 
     .tab_head_cont2_active {
@@ -1033,19 +1071,19 @@
     } */
 
     .button_wrap {
-  position: relative;
-  transition: transform 0.6s ease, opacity 0.6s ease;
-  z-index: 10;
-}
+        position: relative;
+        transition: transform 0.6s ease, opacity 0.6s ease;
+        z-index: 10;
+    }
 
-.button_wrap.sticky_show {
-  position: fixed;
-  bottom: 10px;
-  left: 2.7%;
-  width: 95%;
-  border-radius: 50px;
-  z-index: 9999;
-}
+    .button_wrap.sticky_show {
+        position: fixed;
+        bottom: 10px;
+        left: 2.7%;
+        width: 95%;
+        border-radius: 50px;
+        z-index: 9999;
+    }
 
 
 
@@ -1066,11 +1104,23 @@
     .navbar_button {
         background: linear-gradient(90deg, #F19A3E 0%, #FFB05C 100%);
         gap: 18px !important;
-        padding: 10px 14px 10px 20px !important;
+        padding: 10px 14px 10px 13px !important;
         border-radius: 12px !important;
         justify-content: space-between;
     }
+.cta_wrapper {
+   padding: 0px;
+   background-image: url('/src/assets/images/zero_mobile.png');
+}
 
+.cta_icon_item {
+    width: 44%;
+
+}
+
+.cta_icon_item span {
+    font-size: 10px;
+}
     span.nav_text1 {
         font-size: 16px;
     }
@@ -1187,30 +1237,31 @@
 
 
     .footer_cta_head1 {
-    font-size: 59px;
-}
+        font-size: 59px;
+    }
 
-.corner_icon {
-    top: -1.5rem;
-    right: -1.6rem;
-    width: 4rem;
-}
+    .corner_icon {
+        top: -1.5rem;
+        right: -1.6rem;
+        width: 4rem;
+    }
 
-.footer_cta_content {
-    flex-wrap: wrap;
+    .footer_cta_content {
+        flex-wrap: wrap;
         gap: 20px;
-}
+    }
 
-.footer_cta_inner img {
-    width: 16%;
-}
+    .footer_cta_inner img {
+        width: 16%;
+    }
 
-.footer_cta_inner p {
-    font-size: 15px;
-}
-.green_button {
-    width: 59%;
-}
+    .footer_cta_inner p {
+        font-size: 15px;
+    }
+
+    .green_button {
+        width: 59%;
+    }
 
 
 
@@ -1288,7 +1339,8 @@
     }
 
     .cta_content_wrapper {
-        padding: 35px 50px 0px 20px;
+        gap: 10px;
+        padding: 30px 20px 30px 20px;
     }
 
     p.cta_head {
@@ -1403,9 +1455,9 @@
     }
 
     .cta_img {
-    width: 100%;
-    margin-top: 1rem;
-}
+        width: 100%;
+        margin-top: 1rem;
+    }
 
     .footer-mob {
         display: none;

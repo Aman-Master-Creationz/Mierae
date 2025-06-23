@@ -6,6 +6,9 @@ import Footer3 from '../assets/images/footericon3.png';
 
 import Star from '../assets/images/stars.png';
 const Mobilefooter = () => {
+
+    const message = encodeURIComponent("Hello Mierae Team, I'm interested in solar subsidy.");
+    const phone = "919070607050";
     return (
         <section className="mobile_footer_section">
             <div className="container">
@@ -45,9 +48,10 @@ const Mobilefooter = () => {
                                                 </div>
                                             </div>
 
-                                            <button className="btn orange_button green_button">
-                                                Book Now
-                                            </button>
+                                            <a href={`https://wa.me/${phone}?text=${message}`} target="_blank" rel="noopener noreferrer">
+                                                <button className="btn orange_button green_button">
+                                                    Book Now
+                                                </button></a>
                                         </div>
                                     </div>
                                 </div>

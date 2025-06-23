@@ -16,9 +16,6 @@ const Allsection = () => {
     const scrollRef = useRef(null);
     const [showStickyButton, setShowStickyButton] = useState(false);
 
-
-
-
     useEffect(() => {
         const scrollEl = scrollRef.current;
 

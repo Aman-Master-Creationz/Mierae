@@ -78,8 +78,8 @@ const phone = "919070607050";
                     <span className="bg-white fw-bold rounded small nav_text2">IT’S FREE</span>
                   </a>
                 </div>
-
-                <button className="btn orange_button not_mobile">Check Eligibility</button>
+                <a href={`https://wa.me/${phone}?text=${message}`} target="_blank" rel="noopener noreferrer"><button className="btn orange_button not_mobile">Check Eligibility</button></a>
+                
                 <a href="#calculator1" className="btn white_button not_mobile">Calculate Savings</a>
               </motion.div>
 
