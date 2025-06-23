@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { CheckCircleFill } from 'react-bootstrap-icons';
 import tabImg1 from '../assets/images/tab_cont1.png';
+import tabImg2 from '../assets/images/tab_cont2.png';
+import tabImg3 from '../assets/images/tab_cont3.png';
 import tabIcon1 from '../assets/images/tab_icon1.png';
 import tabIcon2 from '../assets/images/tab_icon2.png';
 import tabIcon3 from '../assets/images/tab_icon3.png';
@@ -18,14 +20,14 @@ const tabs = [
         id: 2,
         label: 'Fast & Easy Installation',
         para: 'We install panels using premium equipment and care.',
-        image: tabImg1,
+        image: tabImg2,
         icon: tabIcon2,
     },
     {
         id: 3,
         label: 'Subsidy & System Activation',
         para: 'We manage approvals and start your solar savings.',
-        image: tabImg1,
+        image: tabImg3g,
         icon: tabIcon3,
     },
 
