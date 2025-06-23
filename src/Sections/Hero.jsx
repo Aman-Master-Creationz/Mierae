@@ -1,9 +1,8 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import familyImage from "../assets/images/family.png";
 import user1 from "../assets/images/author.svg";
 import NameBadge from "../components/Namebadge";
-import { useState, useEffect } from "react";
-
+import { useRef, useEffect, useState } from "react";
 
 // Parent animation with stagger
 const containerVariants = {
@@ -36,23 +35,17 @@ const imageFadeIn = {
   },
 };
 
-const HeroSection = ({ showSticky }) => {
-
-  const [showStickyButton, setShowStickyButton] = useState(false);
+const HeroSection = () => {
+  const heroRef = useRef(null);
+  const isHeroInView = useInView(heroRef, { threshold: 0.5 });
+  const [makeSticky, setMakeSticky] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      // Show sticky button after scrolling 100px
-      setShowStickyButton(window.scrollY > 100);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+    setMakeSticky(!isHeroInView);
+  }, [isHeroInView]);
 
   return (
-    <section className="her0_section" id="home">
+    <section className="her0_section" id="home" ref={heroRef}>
       <div className="container">
         <div className="row align-items-end hero_wrapper">
           {/* Left Text Content */}
@@ -66,24 +59,17 @@ const HeroSection = ({ showSticky }) => {
             >
               <NameBadge />
 
-
               <motion.h1 className="banner_head" variants={fadeUp}>
                 Got Subsidy Of ₹78,000 <br />
                 With Mierae Solar.
               </motion.h1>
 
-              <motion.p
-                className="mt-2 mt-md-3 banner_subhead"
-                variants={fadeUp}
-              >
+              <motion.p className="mt-2 mt-md-3 banner_subhead" variants={fadeUp}>
                 You Can Also Get A Govt. Subsidy & Save ₹4,000/Month Too!
               </motion.p>
 
-              <motion.div
-                className="d-flex gap-3 mt-3 mt-lg-4"
-                variants={fadeUp}
-              >
-                <div className={`button_wrap ${showSticky ? "sticky_show" : ""}`}>
+              <motion.div className="d-flex gap-3 mt-3 mt-lg-4" variants={fadeUp}>
+                <div className={`button_wrap ${makeSticky ? "sticky_show" : ""}`}>
                   <a href="#calculator1" className="btn navbar_button d-flex align-items-center">
                     <span className="me-2 nav_text1">Check Eligibility</span>
                     <span className="bg-white fw-bold rounded small nav_text2">IT’S FREE</span>
@@ -116,11 +102,7 @@ const HeroSection = ({ showSticky }) => {
             viewport={{ once: true, amount: 0.4 }}
             variants={imageFadeIn}
           >
-            <img
-              src={familyImage}
-              alt="Family with solar home"
-              className="img-fluid"
-            />
+            <img src={familyImage} alt="Family with solar home" className="img-fluid" />
           </motion.div>
         </div>
       </div>

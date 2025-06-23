@@ -2,21 +2,26 @@ import React, { useState } from "react";
 
 const faqData = [
     {
-        question: "Who can apply under PM Surya Ghar Yojana?",
+        question: "Who can apply for the rooftop solar subsidy?",
         answer:
-            "Vitae congue eu consequat ac felis placerat vestibulum lectus mauris ultrices. Cursus sit amet dictum sit amet justo donec enim diam porttitor lacus luctus accumsan tortor posuere.",
+            "Any Indian homeowner with a valid electricity connection and rooftop space can apply under the PM Surya Ghar Yojana.",
     },
     {
-        question: "What is the installation time?",
-        answer: "",
+        question: "How much subsidy do I get for a 3kW system?",
+        answer: "You can get up to ₹78,000 in government subsidy for a 3kW rooftop solar installation.",
     },
     {
-        question: "Is subsidy direct to the consumer?",
-        answer: "",
+        question: "What documents are needed to apply?",
+        answer: "Basic KYC like Aadhaar and electricity bill is enough. The process is fully digital with zero documentation charges.",
     },
     {
-        question: "How much space is needed?",
-        answer: "",
+        question: "How long does installation take?",
+        answer: "Installation is usually completed within 7 to 14 days after approval.",
+    },
+
+    {
+        question: "What warranty do I get with the system?",
+        answer: "You get a 10-year product warranty, 25-year energy output guarantee, and 5 years of free maintenance.",
     },
    
 ];

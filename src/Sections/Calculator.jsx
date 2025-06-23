@@ -99,9 +99,8 @@ const SolarSavingsCalculator = () => {
                                     onChange={(e) => setState(e.target.value)}
                                 >
                                     <option>Select State</option>
-                                    <option>Maharashtra</option>
-                                    <option>Delhi</option>
-                                    <option>Karnataka</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Odisha</option>
                                 </select>
                             </div>
 
